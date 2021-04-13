@@ -18,7 +18,7 @@
             </div>
             <div class="fa fe wu vx vy">
                 <div class="o_ i_ lt aw vy">
-                    <h1 class="text-gray-800 dark:text-gray-200 h1 my-h1 sm font-circular-head" data-aos="fade-up">Build
+                    <h1 class="text-gray-800 dark:text-gray-200 h1 sm font-circular-head" data-aos="fade-up">Build
                         and launch with FURSEE</h1>
                     <p class="text-gray-700 dark:text-gray-400 rz sj font-circular-regular" data-aos="fade-up"
                         data-aos-delay="200">Bring your Ideas to live with Fursee at once, and get beautiful results
@@ -26,10 +26,10 @@
                         innovative, transforming & inspiring businesses and high ROI.</p>
                     <div class="ow i_ p_ pf pp">
                         <div data-aos="fade-up" data-aos-delay="400">
-                            <a class="rounded-lg a lr yi yl cv sm di pb" href="#0">Let's help you start</a>
+                            <a class="rounded-lg a bg-blue-gray-900 hover:bg-blue-gray-800 dark:bg-cyan-900 cv sm di pb hover:text-gray-100" href="#0">Let's help you start</a>
                         </div>
                         <div data-aos="fade-up" data-aos-delay="600">
-                            <a class="rounded-lg a lr gz ts cv di px" href="#0">Learn more</a>
+                            <a class="text-gray-900 bg-purple-100 rounded-lg hover:bg-purple-200 a cv di px" href="{{ route('aboutUs') }}">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -83,7 +83,7 @@
                             style="width:calc(100% - 32px);left:calc(50% + 48px);top:32px" data-aos="fade-in"
                             data-aos-delay="200"></div>
                         <svg class="ca rm sm" viewbox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                            <rect class="text-purple-600 fj" width="64" height="64" rx="32"></rect>
+                            <rect class="text-blue-gray-900 dark:text-blue-800 fj" width="64" height="64" rx="32"></rect>
                             <path class="fq wv" stroke-width="2" stroke-linecap="square" d="M21 23h22v18H21z"
                                 fill="none" fill-rule="evenodd"></path>
                             <path class="fq wp" d="M26 28h12M26 32h12M26 36h5" stroke-width="2" stroke-linecap="square">
@@ -99,7 +99,7 @@
                             style="width:calc(100% - 32px);left:calc(50% + 48px);top:32px" data-aos="fade-in"
                             data-aos-delay="400"></div>
                         <svg class="ca rm sm" viewbox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                            <rect class="text-purple-600 fj" width="64" height="64" rx="32"></rect>
+                            <rect class="text-blue-gray-900 dark:text-blue-800 fj" width="64" height="64" rx="32"></rect>
                             <g fill="none" fill-rule="evenodd">
                                 <path class="fq wv"
                                     d="M40 22a2 2 0 012 2v16a2 2 0 01-2 2H24a2 2 0 01-2-2V24a2 2 0 012-2"
@@ -115,7 +115,7 @@
                     </div>
                     <div class="fa np ng nw" data-aos="fade-up" data-aos-delay="400">
                         <svg class="ca rm sm" viewbox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                            <rect class="text-purple-600 fj" width="64" height="64" rx="32"></rect>
+                            <rect class="text-blue-gray-900 dark:text-blue-800 fj" width="64" height="64" rx="32"></rect>
                             <path class="fq wv" stroke-width="2" stroke-linecap="square" d="M21 35l4 4 12-15"
                                 fill="none" fill-rule="evenodd"></path>
                             <path class="fq wp" d="M42 29h-3M42 34h-7M42 39H31" stroke-width="2"
@@ -134,10 +134,10 @@
     <section class="mx-0 bg-gray-100 dark:bg-gray-900">
         <div class="px-4 py-16 mx-auto bg-gray-100 dark:bg-gray-900 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
             <div class="mx-auto sm:text-center lg:max-w-2xl">
-                <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+                <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12" data-aos="fade-up">
                     <div>
                         <p
-                            class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase bg-green-400 rounded-full dark:text-gray-800 dark:bg-green-400">
+                            class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider uppercase rounded-full bg-blue-gray-800 text-gray-50">
                             Brand new
                         </p>
                     </div>
@@ -162,12 +162,12 @@
                         We are an Enterprise Solution Provider & Experts in Mobile App/Web Development.
                     </p>
                 </div>
-                <div class="mb-4 transition-shadow duration-300 hover:shadow-xl lg:mb-6">
+                <div class="mb-4 transition-shadow duration-300 hover:shadow-xl lg:mb-6" data-aos="fade-up">
                     <img class="object-cover w-full h-56 rounded shadow-lg sm:h-64 md:h-80 lg:h-96"
                         src="https://images.pexels.com/photos/3727459/pexels-photo-3727459.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
                         alt="" />
                 </div>
-                <p class="max-w-xl mb-4 text-base text-gray-600 dark:text-gray-400 sm:mx-auto">
+                <p class="max-w-xl mb-4 text-lg text-gray-600 dark:text-gray-400 sm:mx-auto" data-aos="fade-up">
                     As a leading custom software development company, we create software products that unlock the power of digital transformation journey. Check out some of our cutting edge software solutions that help organizations to streamline their business operation, reduce overhead cost, enable automation in process and increase revenue.
                 </p>
                 <a href="#" aria-label=""
@@ -186,42 +186,42 @@
     <section class="i_ uj dt dark:bg-gray-900">
         <div class="py-20 bg-gray-50 dark:bg-gray-900 radius-for-skewed">
             <div class="container px-4 mx-auto">
-                <div class="flex flex-wrap items-center">
+                <div class="flex flex-wrap items-center" data-aos="fade-up">
                     <div class="w-full mb-12 lg:w-1/2 lg:mb-0">
                         <div class="max-w-md lg:mx-auto" data-aos="fade-up" data-aos-delay="200">
-                            <span class="font-bold text-gray-600 dark:text-green-600">At FURSEE Inc.</span>
+                            <span class="font-bold text-gray-600 dark:text-purple-300">At FURSEE Inc.</span>
                             <h2
-                                class="my-2 text-4xl font-bold text-gray-700 dark:text-gray-300 lg:text-5xl font-heading">
+                                class="my-2 text-4xl font-light text-gray-700 dark:text-gray-300 lg:text-5xl font-heading">
                                 Build &amp; Launch without
                                 problems</h2>
                             <p class="mb-6 leading-loose text-gray-700 dark:text-gray-400">Some of our clients say we are the best at what we do but all we did is give it our best, Your Business + Our Brains = Excellent Result.</p>
                             <ul class="text-gray-500">
                                 <li class="flex mb-4">
-                                    <svg class="w-6 h-6 mr-2 text-green-400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg class="w-6 h-6 mr-2 text-blue-gray-900 dark:text-blue-600" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 20 20" fill="currentColor">
                                         <path fill-rule="evenodd"
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="font-circular dark:text-green-400">User Experience and Friendliness</span>
+                                    <span class="font-circular dark:text-purple-200">User Experience and Friendliness</span>
                                 </li>
                                 <li class="flex mb-4">
-                                    <svg class="w-6 h-6 mr-2 text-green-400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg class="w-6 h-6 mr-2 text-blue-gray-900 dark:text-blue-600" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 20 20" fill="currentColor">
                                         <path fill-rule="evenodd"
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="font-circular dark:text-green-400">World-Class Technology Stack</span>
+                                    <span class="font-circular dark:text-purple-200">World-Class Technology Stack</span>
                                 </li>
                                 <li class="flex mb-4">
-                                    <svg class="w-6 h-6 mr-2 text-green-400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg class="w-6 h-6 mr-2 text-blue-gray-900 dark:text-blue-600" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 20 20" fill="currentColor">
                                         <path fill-rule="evenodd"
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="font-circular dark:text-green-400">Expert Support Team</span>
+                                    <span class="font-circular dark:text-purple-200">Expert Support Team</span>
                                 </li>
                             </ul>
                         </div>
@@ -230,8 +230,8 @@
                         <div class="w-full px-4 mb-8 lg:mb-0 md:w-1/2">
                             <div class="py-6 pl-6 pr-4 mb-8 bg-white rounded shadow" data-aos="fade-in"
                                 data-aos-delay="200">
-                                <span class="inline-block p-3 mb-4 bg-green-100 rounded-lg">
-                                    <svg class="w-10 h-10 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                <span class="inline-block p-3 mb-4 rounded-lg nr bg-blue-gray-100">
+                                    <svg class="w-10 h-10 text-blue-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none"
                                         viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
@@ -244,8 +244,8 @@
                                     Institutes, Payment Gateways, Large, Medium and Small Business and more.</p>
                             </div>
                             <div class="py-6 pl-6 pr-4 bg-white rounded shadow" data-aos="fade-up" data-aos-delay="400">
-                                <span class="inline-block p-3 mb-4 bg-green-100 rounded-lg">
-                                    <svg class="w-10 h-10 text-green-600" xmlns="http://www.w3.org/2000/svg"
+                                <span class="inline-block p-3 mb-4 rounded-lg bg-blue-gray-100 nr">
+                                    <svg class="w-10 h-10 text-gray-600" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 20 20" fill="currentColor">
                                         <path
                                             d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
@@ -262,8 +262,8 @@
                         <div class="w-full px-4 md:w-1/2 lg:mt-20">
                             <div class="py-6 pl-6 pr-4 mb-8 bg-white rounded-lg shadow" data-aos="fade-in"
                                 data-aos-delay="600">
-                                <span class="inline-block p-3 mb-4 bg-green-100 rounded">
-                                    <svg class="w-10 h-10 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                <span class="inline-block p-3 mb-4 rounded bg-blue-gray-100 nr">
+                                    <svg class="w-10 h-10 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none"
                                         viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
@@ -278,8 +278,8 @@
                             </div>
                             <div class="py-6 pl-6 pr-4 bg-white rounded-lg shadow" data-aos="fade-up"
                                 data-aos-delay="800">
-                                <span class="inline-block p-3 mb-4 bg-green-100 rounded">
-                                    <svg class="w-10 h-10 text-green-600" xmlns="http://www.w3.org/2000/svg"
+                                <span class="inline-block p-3 mb-4 rounded bg-blue-gray-100 nr">
+                                    <svg class="w-10 h-10 text-gray-600" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 20 20" fill="currentColor">
                                         <path fill-rule="evenodd"
                                             d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"

@@ -21609,361 +21609,359 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "bg-gray-50 dark:bg-gray-900" }, [
-    _c(
-      "div",
-      {
-        staticClass:
-          "px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
-      },
-      [
-        _c(
-          "div",
-          { staticClass: "relative flex items-center justify-between" },
-          [
-            _c(
-              "a",
-              {
-                staticClass: "inline-flex items-center",
-                attrs: {
-                  href: "/",
-                  "aria-label": "Fursee Inc",
-                  title: "Fursee Inc"
-                }
-              },
-              [
-                _c(
-                  "svg",
-                  {
-                    staticClass:
-                      "w-8 text-teal-accent-100 dark:text-teal-accent-400",
-                    attrs: {
-                      viewBox: "0 0 24 24",
-                      "stroke-linejoin": "round",
-                      "stroke-width": "2",
-                      "stroke-linecap": "round",
-                      "stroke-miterlimit": "10",
-                      stroke: "currentColor",
-                      fill: "none"
-                    }
-                  },
-                  [
-                    _c("rect", {
-                      attrs: { x: "3", y: "1", width: "7", height: "12" }
-                    }),
-                    _vm._v(" "),
-                    _c("rect", {
-                      attrs: { x: "3", y: "17", width: "7", height: "6" }
-                    }),
-                    _vm._v(" "),
-                    _c("rect", {
-                      attrs: { x: "14", y: "1", width: "7", height: "6" }
-                    }),
-                    _vm._v(" "),
-                    _c("rect", {
-                      attrs: { x: "14", y: "11", width: "7", height: "12" }
-                    })
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "span",
-                  {
-                    staticClass:
-                      "ml-2 text-xl font-bold tracking-wide text-gray-600 uppercase dark:text-gray-100"
-                  },
-                  [_vm._v("Fursee Inc")]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _vm._m(0),
-            _vm._v(" "),
-            _vm._m(1),
-            _vm._v(" "),
-            _c("div", { staticClass: "lg:hidden" }, [
+  return _c(
+    "div",
+    { staticClass: "bg-opacity-0 bg-gray-50 dark:bg-gray-900" },
+    [
+      _c(
+        "div",
+        {
+          staticClass:
+            "px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
+        },
+        [
+          _c(
+            "div",
+            { staticClass: "relative flex items-center justify-between" },
+            [
               _c(
-                "button",
+                "a",
                 {
-                  staticClass:
-                    "p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline",
-                  attrs: { "aria-label": "Open Menu", title: "Open Menu" },
-                  on: {
-                    click: function($event) {
-                      _vm.isMenuOpen = true
-                    }
+                  staticClass: "inline-flex items-center",
+                  attrs: {
+                    href: "/",
+                    "aria-label": "Fursee Inc",
+                    title: "Fursee Inc"
                   }
                 },
                 [
                   _c(
                     "svg",
                     {
-                      staticClass: "w-5 text-gray-600",
-                      attrs: { viewBox: "0 0 24 24" }
+                      staticClass:
+                        "w-8 text-teal-accent-100 dark:text-teal-accent-400",
+                      attrs: {
+                        viewBox: "0 0 24 24",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                        "stroke-linecap": "round",
+                        "stroke-miterlimit": "10",
+                        stroke: "currentColor",
+                        fill: "none"
+                      }
                     },
                     [
-                      _c("path", {
-                        attrs: {
-                          fill: "currentColor",
-                          d:
-                            "M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
-                        }
+                      _c("rect", {
+                        attrs: { x: "3", y: "1", width: "7", height: "12" }
                       }),
                       _vm._v(" "),
-                      _c("path", {
-                        attrs: {
-                          fill: "currentColor",
-                          d:
-                            "M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"
-                        }
+                      _c("rect", {
+                        attrs: { x: "3", y: "17", width: "7", height: "6" }
                       }),
                       _vm._v(" "),
-                      _c("path", {
-                        attrs: {
-                          fill: "currentColor",
-                          d:
-                            "M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"
-                        }
+                      _c("rect", {
+                        attrs: { x: "14", y: "1", width: "7", height: "6" }
+                      }),
+                      _vm._v(" "),
+                      _c("rect", {
+                        attrs: { x: "14", y: "11", width: "7", height: "12" }
                       })
                     ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "span",
+                    {
+                      staticClass:
+                        "ml-2 text-xl font-bold tracking-wide text-gray-600 uppercase dark:text-gray-100"
+                    },
+                    [_vm._v("Fursee Inc")]
                   )
                 ]
               ),
               _vm._v(" "),
-              _vm.isMenuOpen
-                ? _c("div", { staticClass: "absolute top-0 left-0 w-full" }, [
+              _vm._m(0),
+              _vm._v(" "),
+              _vm._m(1),
+              _vm._v(" "),
+              _c("div", { staticClass: "lg:hidden" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass:
+                      "p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline",
+                    attrs: { "aria-label": "Open Menu", title: "Open Menu" },
+                    on: {
+                      click: function($event) {
+                        _vm.isMenuOpen = true
+                      }
+                    }
+                  },
+                  [
                     _c(
-                      "div",
-                      { staticClass: "p-5 bg-white border rounded shadow-sm" },
+                      "svg",
+                      {
+                        staticClass: "w-5 text-gray-600",
+                        attrs: { viewBox: "0 0 24 24" }
+                      },
                       [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "flex items-center justify-between mb-4"
-                          },
-                          [
-                            _c("div", [
-                              _c(
-                                "a",
-                                {
-                                  staticClass: "inline-flex items-center",
-                                  attrs: {
-                                    href: "/",
-                                    "aria-label": "Company",
-                                    title: "Company"
-                                  }
-                                },
-                                [
-                                  _c(
-                                    "svg",
-                                    {
-                                      staticClass:
-                                        "w-8 text-deep-purple-accent-400",
-                                      attrs: {
-                                        viewBox: "0 0 24 24",
-                                        "stroke-linejoin": "round",
-                                        "stroke-width": "2",
-                                        "stroke-linecap": "round",
-                                        "stroke-miterlimit": "10",
-                                        stroke: "currentColor",
-                                        fill: "none"
-                                      }
-                                    },
-                                    [
-                                      _c("rect", {
-                                        attrs: {
-                                          x: "3",
-                                          y: "1",
-                                          width: "7",
-                                          height: "12"
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c("rect", {
-                                        attrs: {
-                                          x: "3",
-                                          y: "17",
-                                          width: "7",
-                                          height: "6"
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c("rect", {
-                                        attrs: {
-                                          x: "14",
-                                          y: "1",
-                                          width: "7",
-                                          height: "6"
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c("rect", {
-                                        attrs: {
-                                          x: "14",
-                                          y: "11",
-                                          width: "7",
-                                          height: "12"
-                                        }
-                                      })
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "span",
-                                    {
-                                      staticClass:
-                                        "ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase"
-                                    },
-                                    [_vm._v("Company")]
-                                  )
-                                ]
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("div", [
-                              _c(
-                                "button",
-                                {
-                                  staticClass:
-                                    "p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline",
-                                  attrs: {
-                                    "aria-label": "Close Menu",
-                                    title: "Close Menu"
-                                  },
-                                  on: {
-                                    click: function($event) {
-                                      _vm.isMenuOpen = false
-                                    }
-                                  }
-                                },
-                                [
-                                  _c(
-                                    "svg",
-                                    {
-                                      staticClass: "w-5 text-gray-600",
-                                      attrs: { viewBox: "0 0 24 24" }
-                                    },
-                                    [
-                                      _c("path", {
-                                        attrs: {
-                                          fill: "currentColor",
-                                          d:
-                                            "M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z"
-                                        }
-                                      })
-                                    ]
-                                  )
-                                ]
-                              )
-                            ])
-                          ]
-                        ),
+                        _c("path", {
+                          attrs: {
+                            fill: "currentColor",
+                            d:
+                              "M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
+                          }
+                        }),
                         _vm._v(" "),
-                        _vm._m(2)
+                        _c("path", {
+                          attrs: {
+                            fill: "currentColor",
+                            d:
+                              "M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("path", {
+                          attrs: {
+                            fill: "currentColor",
+                            d:
+                              "M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"
+                          }
+                        })
                       ]
                     )
-                  ])
-                : _vm._e()
-            ])
-          ]
-        )
-      ]
-    )
-  ])
+                  ]
+                ),
+                _vm._v(" "),
+                _vm.isMenuOpen
+                  ? _c("div", { staticClass: "absolute top-0 left-0 w-full" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "p-5 bg-white border rounded shadow-sm"
+                        },
+                        [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "flex items-center justify-between mb-4"
+                            },
+                            [
+                              _c("div", [
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "inline-flex items-center",
+                                    attrs: {
+                                      href: "/",
+                                      "aria-label": "Fursee Inc.",
+                                      title: "Fursee Inc."
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "svg",
+                                      {
+                                        staticClass:
+                                          "w-8 text-deep-purple-accent-400",
+                                        attrs: {
+                                          viewBox: "0 0 24 24",
+                                          "stroke-linejoin": "round",
+                                          "stroke-width": "2",
+                                          "stroke-linecap": "round",
+                                          "stroke-miterlimit": "10",
+                                          stroke: "currentColor",
+                                          fill: "none"
+                                        }
+                                      },
+                                      [
+                                        _c("rect", {
+                                          attrs: {
+                                            x: "3",
+                                            y: "1",
+                                            width: "7",
+                                            height: "12"
+                                          }
+                                        }),
+                                        _vm._v(" "),
+                                        _c("rect", {
+                                          attrs: {
+                                            x: "3",
+                                            y: "17",
+                                            width: "7",
+                                            height: "6"
+                                          }
+                                        }),
+                                        _vm._v(" "),
+                                        _c("rect", {
+                                          attrs: {
+                                            x: "14",
+                                            y: "1",
+                                            width: "7",
+                                            height: "6"
+                                          }
+                                        }),
+                                        _vm._v(" "),
+                                        _c("rect", {
+                                          attrs: {
+                                            x: "14",
+                                            y: "11",
+                                            width: "7",
+                                            height: "12"
+                                          }
+                                        })
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "span",
+                                      {
+                                        staticClass:
+                                          "ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase"
+                                      },
+                                      [_vm._v("Fursee Inc.")]
+                                    )
+                                  ]
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("div", [
+                                _c(
+                                  "button",
+                                  {
+                                    staticClass:
+                                      "p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline",
+                                    attrs: {
+                                      "aria-label": "Close Menu",
+                                      title: "Close Menu"
+                                    },
+                                    on: {
+                                      click: function($event) {
+                                        _vm.isMenuOpen = false
+                                      }
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "svg",
+                                      {
+                                        staticClass: "w-5 text-gray-600",
+                                        attrs: { viewBox: "0 0 24 24" }
+                                      },
+                                      [
+                                        _c("path", {
+                                          attrs: {
+                                            fill: "currentColor",
+                                            d:
+                                              "M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z"
+                                          }
+                                        })
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _vm._m(2)
+                        ]
+                      )
+                    ])
+                  : _vm._e()
+              ])
+            ]
+          )
+        ]
+      )
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "ul",
-      { staticClass: "flex items-center hidden space-x-8 lg:flex" },
-      [
-        _c("li", [
-          _c(
-            "a",
-            {
-              staticClass:
-                "font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400",
-              attrs: {
-                href: "/",
-                "aria-label": "Our product",
-                title: "Our product"
-              }
-            },
-            [_vm._v("Product")]
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c(
-            "a",
-            {
-              staticClass:
-                "font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400",
-              attrs: {
-                href: "/",
-                "aria-label": "Our product",
-                title: "Our product"
-              }
-            },
-            [_vm._v("Features")]
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c(
-            "a",
-            {
-              staticClass:
-                "font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400",
-              attrs: {
-                href: "/",
-                "aria-label": "Product pricing",
-                title: "Product pricing"
-              }
-            },
-            [_vm._v("Pricing")]
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c(
-            "a",
-            {
-              staticClass:
-                "font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400",
-              attrs: { href: "/", "aria-label": "About us", title: "About us" }
-            },
-            [_vm._v("About us")]
-          )
-        ])
-      ]
-    )
+    return _c("ul", { staticClass: "items-center hidden space-x-8 lg:flex" }, [
+      _c("li", [
+        _c(
+          "a",
+          {
+            staticClass:
+              "font-medium tracking-wide text-teal-300 transition-colors duration-200 hover:text-teal-accent-400",
+            attrs: {
+              href: "/",
+              "aria-label": "Our product",
+              title: "Our product"
+            }
+          },
+          [_vm._v("About Us")]
+        )
+      ]),
+      _vm._v(" "),
+      _c("li", [
+        _c(
+          "a",
+          {
+            staticClass:
+              "font-medium tracking-wide text-teal-300 transition-colors duration-200 hover:text-teal-accent-400",
+            attrs: {
+              href: "/",
+              "aria-label": "Our product",
+              title: "Our product"
+            }
+          },
+          [_vm._v("Features")]
+        )
+      ]),
+      _vm._v(" "),
+      _c("li", [
+        _c(
+          "a",
+          {
+            staticClass:
+              "font-medium tracking-wide text-teal-300 transition-colors duration-200 hover:text-teal-accent-400",
+            attrs: {
+              href: "/",
+              "aria-label": "Product pricing",
+              title: "Product pricing"
+            }
+          },
+          [_vm._v("Blog")]
+        )
+      ]),
+      _vm._v(" "),
+      _c("li", [
+        _c(
+          "a",
+          {
+            staticClass:
+              "font-medium tracking-wide text-teal-300 transition-colors duration-200 hover:text-teal-accent-400",
+            attrs: { href: "/", "aria-label": "About us", title: "About us" }
+          },
+          [_vm._v("About us")]
+        )
+      ])
+    ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "ul",
-      { staticClass: "flex items-center hidden space-x-8 lg:flex" },
-      [
-        _c("li", [
-          _c(
-            "a",
-            {
-              staticClass:
-                "inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none",
-              attrs: { href: "/", "aria-label": "Sign up", title: "Sign up" }
-            },
-            [_vm._v("\n                        Sign up\n                    ")]
-          )
-        ])
-      ]
-    )
+    return _c("ul", { staticClass: "items-center hidden space-x-8 lg:flex" }, [
+      _c("li", [
+        _c(
+          "a",
+          {
+            staticClass:
+              "inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none",
+            attrs: { href: "/", "aria-label": "Sign up", title: "Sign up" }
+          },
+          [_vm._v("\n                        Sign up\n                    ")]
+        )
+      ])
+    ])
   },
   function() {
     var _vm = this
@@ -21983,7 +21981,7 @@ var staticRenderFns = [
                 title: "Our product"
               }
             },
-            [_vm._v("Product")]
+            [_vm._v("About Us")]
           )
         ]),
         _vm._v(" "),
@@ -22015,7 +22013,7 @@ var staticRenderFns = [
                 title: "Product pricing"
               }
             },
-            [_vm._v("Pricing")]
+            [_vm._v("Blog")]
           )
         ]),
         _vm._v(" "),

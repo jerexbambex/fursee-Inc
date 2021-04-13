@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-gray-50 dark:bg-gray-900">
+    <div class="bg-opacity-0 bg-gray-50 dark:bg-gray-900">
         <div
             class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
         >
@@ -30,14 +30,14 @@
                         >Fursee Inc</span
                     >
                 </a>
-                <ul class="flex items-center hidden space-x-8 lg:flex">
+                <ul class="items-center hidden space-x-8 lg:flex">
                     <li>
                         <a
                             href="/"
                             aria-label="Our product"
                             title="Our product"
-                            class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-                            >Product</a
+                            class="font-medium tracking-wide text-teal-300 transition-colors duration-200 hover:text-teal-accent-400"
+                            >About Us</a
                         >
                     </li>
                     <li>
@@ -45,7 +45,7 @@
                             href="/"
                             aria-label="Our product"
                             title="Our product"
-                            class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                            class="font-medium tracking-wide text-teal-300 transition-colors duration-200 hover:text-teal-accent-400"
                             >Features</a
                         >
                     </li>
@@ -54,8 +54,8 @@
                             href="/"
                             aria-label="Product pricing"
                             title="Product pricing"
-                            class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-                            >Pricing</a
+                            class="font-medium tracking-wide text-teal-300 transition-colors duration-200 hover:text-teal-accent-400"
+                            >Blog</a
                         >
                     </li>
                     <li>
@@ -63,12 +63,12 @@
                             href="/"
                             aria-label="About us"
                             title="About us"
-                            class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                            class="font-medium tracking-wide text-teal-300 transition-colors duration-200 hover:text-teal-accent-400"
                             >About us</a
                         >
                     </li>
                 </ul>
-                <ul class="flex items-center hidden space-x-8 lg:flex">
+                <ul class="items-center hidden space-x-8 lg:flex">
                     <li>
                         <a
                             href="/"
@@ -108,8 +108,8 @@
                                 <div>
                                     <a
                                         href="/"
-                                        aria-label="Company"
-                                        title="Company"
+                                        aria-label="Fursee Inc."
+                                        title="Fursee Inc."
                                         class="inline-flex items-center"
                                     >
                                         <svg
@@ -149,7 +149,7 @@
                                         </svg>
                                         <span
                                             class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase"
-                                            >Company</span
+                                            >Fursee Inc.</span
                                         >
                                     </a>
                                 </div>
@@ -180,7 +180,7 @@
                                             aria-label="Our product"
                                             title="Our product"
                                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                                            >Product</a
+                                            >About Us</a
                                         >
                                     </li>
                                     <li>
@@ -198,7 +198,7 @@
                                             aria-label="Product pricing"
                                             title="Product pricing"
                                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                                            >Pricing</a
+                                            >Blog</a
                                         >
                                     </li>
                                     <li>
