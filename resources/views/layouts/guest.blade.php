@@ -258,7 +258,7 @@
                                 <h6 class="font-semibold tracking-wide text-blue-gray-700 dark:text-blue-gray-300 si">Resources</h6>
                                 <ul>
                                     <li class="si">
-                                        <a class="text-blue-gray-500 dark:text-blue-gray-400 h_ pt hz hover:text-blue-gray-900 dark:hover:text-blue-gray-100" href="#0">Blog</a>
+                                        <a class="text-blue-gray-500 dark:text-blue-gray-400 h_ pt hz hover:text-blue-gray-900 dark:hover:text-blue-gray-100" href="{{ route('blog.index') }}">Blog</a>
                                     </li>
                                     <li class="si">
                                         <a class="text-blue-gray-500 dark:text-blue-gray-400 h_ pt hz hover:text-blue-gray-900 dark:hover:text-blue-gray-100" href="#0">Support</a>
@@ -278,10 +278,10 @@
                                 <h6 class="font-semibold tracking-wide text-blue-gray-700 dark:text-blue-gray-300 si">Company</h6>
                                 <ul>
                                     <li class="si">
-                                        <a class="text-blue-gray-500 dark:text-blue-gray-400 h_ pt hz hover:text-blue-gray-900 dark:hover:text-blue-gray-100" href="#0">About Us</a>
+                                        <a class="text-blue-gray-500 dark:text-blue-gray-400 h_ pt hz hover:text-blue-gray-900 dark:hover:text-blue-gray-100" href="{{ route('aboutUs') }}">About Us</a>
                                     </li>
                                     <li class="si">
-                                        <a class="text-blue-gray-500 dark:text-blue-gray-400 h_ pt hz hover:text-blue-gray-900 dark:hover:text-blue-gray-100" href="#0">Our Team</a>
+                                        <a class="text-blue-gray-500 dark:text-blue-gray-400 h_ pt hz hover:text-blue-gray-900 dark:hover:text-blue-gray-100" href="{{ route('teams') }}">Our Team</a>
                                     </li>
                                     <li class="si">
                                         <a class="text-blue-gray-500 dark:text-blue-gray-400 h_ pt hz hover:text-blue-gray-900 dark:hover:text-blue-gray-100" href="#0">Privacy</a>

@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Client\AboutUsController;
+use App\Http\Controllers\Client\BlogController;
+use App\Http\Controllers\Client\TeamController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -16,3 +18,6 @@ require __DIR__.'/auth.php';
 
 
 Route::get('/about-us', [AboutUsController::class, 'index'])->name('aboutUs');
+Route::get('/blogs', [BlogController::class, 'index'])->name('blog.index');
+Route::get('/blogs/{blog}', [BlogController::class, 'show'])->name('blog.show');
+Route::get('/teams', [TeamController::class, 'index'])->name('teams');

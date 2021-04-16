@@ -2,16 +2,17 @@
 
 namespace App\Http\Controllers\Dashboard;
 
-use App\Http\Controllers\Controller;
+use App\Models\Blog;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class BlogController extends Controller
+class AdminBlogController extends Controller
 {
     public function indeX()
     {
         //
     }
-    
+
     public function create()
     {
         return 'create';
@@ -19,7 +20,7 @@ class BlogController extends Controller
 
     public function store()
     {
-        return 'store'
+        return 'store';
     }
 
     public function show(Blog $blog)
@@ -29,13 +30,13 @@ class BlogController extends Controller
 
     public function edit(Blog $blog)
     {
-        return 'edit';
+        return $blog;
     }
 
     public function update(Blog $blog)
     {
         $blog->update();
-        return 'update';
+        return 'updated';
     }
 
     public function destroy(Blog $blog)

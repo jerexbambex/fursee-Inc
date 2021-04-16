@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Blog extends Model
+class Category extends Model
 {
     use HasFactory;
 
@@ -13,12 +13,11 @@ class Blog extends Model
 
     public function path()
     {
-        $string = str_replace(' ', '-', $this->title);
-        return $this->id . '-' . $string;
+        return $this->id;
     }
 
-    public function category()
+    public function blog()
     {
-        return $this->belongsToMany('App\Models\Category');
+        return $this->belongsToMany('App\Models\Blog');
     }
 }
