@@ -30,10 +30,10 @@
                         >Fursee Inc</span
                     >
                 </a>
-                <ul class="items-center hidden space-x-8 lg:flex">
+                <ul class="flex items-center hidden space-x-8 lg:flex">
                     <li>
                         <a
-                            href="/"
+                            :href="route('aboutUs')"
                             aria-label="Our product"
                             title="Our product"
                             class="font-medium tracking-wide text-teal-300 transition-colors duration-200 hover:text-teal-accent-400"
@@ -51,7 +51,7 @@
                     </li>
                     <li>
                         <a
-                            href="/"
+                            href="/blogs"
                             aria-label="Product pricing"
                             title="Product pricing"
                             class="font-medium tracking-wide text-teal-300 transition-colors duration-200 hover:text-teal-accent-400"
@@ -60,23 +60,23 @@
                     </li>
                     <li>
                         <a
-                            href="/"
+                            href="/teams"
                             aria-label="About us"
                             title="About us"
                             class="font-medium tracking-wide text-teal-300 transition-colors duration-200 hover:text-teal-accent-400"
-                            >About us</a
+                            >Team</a
                         >
                     </li>
                 </ul>
-                <ul class="items-center hidden space-x-8 lg:flex">
+                <ul class="flex items-center hidden space-x-8 lg:flex">
                     <li>
                         <a
                             href="/"
                             class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                            aria-label="Sign up"
-                            title="Sign up"
+                            aria-label="Contact Us"
+                            title="Contact Us"
                         >
-                            Sign up
+                            Contact Us
                         </a>
                     </li>
                 </ul>
@@ -176,7 +176,7 @@
                                 <ul class="space-y-4">
                                     <li>
                                         <a
-                                            href="/"
+                                            href="/about-us"
                                             aria-label="Our product"
                                             title="Our product"
                                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -194,7 +194,7 @@
                                     </li>
                                     <li>
                                         <a
-                                            href="/"
+                                            href="/blogs"
                                             aria-label="Product pricing"
                                             title="Product pricing"
                                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -203,21 +203,21 @@
                                     </li>
                                     <li>
                                         <a
-                                            href="/"
-                                            aria-label="About us"
-                                            title="About us"
+                                            href="/teams"
+                                            aria-label="Team"
+                                            title="Team"
                                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                                            >About us</a
+                                            >Team</a
                                         >
                                     </li>
                                     <li>
                                         <a
                                             href="/"
                                             class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                                            aria-label="Sign up"
-                                            title="Sign up"
+                                            aria-label="Contact Us"
+                                            title="Contact Us"
                                         >
-                                            Sign up
+                                            Contact Us
                                         </a>
                                     </li>
                                 </ul>

@@ -167,12 +167,12 @@
                         src="https://images.pexels.com/photos/3727459/pexels-photo-3727459.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
                         alt="" />
                 </div>
-                <p class="max-w-xl mb-4 text-lg text-gray-600 dark:text-gray-400 sm:mx-auto" data-aos="fade-up">
-                    As a leading custom software development company, we create software products that unlock the power of digital transformation journey. Check out some of our cutting edge software solutions that help organizations to streamline their business operation, reduce overhead cost, enable automation in process and increase revenue.
+                <p class="max-w-xl mb-4 text-xl text-gray-600 dark:text-gray-400 sm:mx-auto" data-aos="fade-up">
+                    As a leading custom software development company, we create software products that unlock the power of digital transformation journey.
                 </p>
-                <a href="#" aria-label=""
-                    class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
-                    {{-- Learn more --}}
+                <a href="{{ route('aboutUs') }}" aria-label=""
+                    class="inline-flex items-center font-semibold transition-colors duration-200 text-blue-gray-600 hover:text-blue-gray-800">
+                    Learn more
                     <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
                         <path
                             d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z">
@@ -231,24 +231,26 @@
                             <div class="py-6 pl-6 pr-4 mb-8 bg-white rounded shadow" data-aos="fade-in"
                                 data-aos-delay="200">
                                 <span class="inline-block p-3 mb-4 rounded-lg nr bg-blue-gray-100">
-                                    <svg class="w-10 h-10 text-blue-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    {{-- <svg class="w-10 h-10 text-blue-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none"
                                         viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
                                         </path>
+                                    </svg> --}}
+                                    <svg class="w-10 h-10 text-blue-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
                                     </svg>
                                 </span>
-                                <h4 class="mb-2 text-2xl text-gray-600 font-circular-head font-heading">Enterprise
-                                    Solution Development</h4>
+                                <h4 class="mb-2 text-2xl text-gray-600 font-circular-head font-heading">Web Development</h4>
                                 <p class="leading-loose text-gray-500 font-circular">Banks, Schools, Financial
                                     Institutes, Payment Gateways, Large, Medium and Small Business and more.</p>
                             </div>
                             <div class="py-6 pl-6 pr-4 bg-white rounded shadow" data-aos="fade-up" data-aos-delay="400">
                                 <span class="inline-block p-3 mb-4 rounded-lg bg-blue-gray-100 nr">
-                                    <svg class="w-10 h-10 text-gray-600" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 20 20" fill="currentColor">
-                                        <path
-                                            d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
+                                    <svg class="w-10 h-10 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                            d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z">
                                         </path>
                                     </svg>
                                 </span>

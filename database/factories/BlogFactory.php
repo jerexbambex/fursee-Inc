@@ -22,7 +22,8 @@ class BlogFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'title' => $this->faker->realText($maxNbChars = 50),
+            'body' => $this->faker->paragraphs($nb = 3, $asText = true ),
         ];
     }
 }

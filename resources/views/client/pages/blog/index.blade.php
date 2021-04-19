@@ -91,8 +91,12 @@
                         @endforeach
                     </div>
                 </div>
+                
                 <nav class="np nj ak" role="navigation" aria-label="Pagination Navigation">
                     <ul class="nd ny ro r_ ic">
+                        {{ $blogs->links() }}
+                    </ul>
+                    {{-- <ul class="nd ny ro r_ ic">
                         <li class="ia">
                             <span class="nd bu we nj nw _ uj nr la">Prev</span>
                         </li>
@@ -114,7 +118,7 @@
                         <li class="ia">
                             <a href="#0" class="nd bu we nj nw _ uj nr lo yf xu pt hz">Next</a>
                         </li>
-                    </ul>
+                    </ul> --}}
                 </nav>
             </div>
         </div>

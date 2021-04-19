@@ -4066,6 +4066,11 @@ vue__WEBPACK_IMPORTED_MODULE_1__.default.component('example-component', __webpac
 var app = new vue__WEBPACK_IMPORTED_MODULE_1__.default({
   el: '#app',
   component: {// Example,
+  },
+  data: function data() {
+    return {
+      isMenuOpen: false
+    };
   }
 });
 
@@ -21680,9 +21685,35 @@ var render = function() {
                 ]
               ),
               _vm._v(" "),
-              _vm._m(0),
+              _c(
+                "ul",
+                { staticClass: "flex items-center hidden space-x-8 lg:flex" },
+                [
+                  _c("li", [
+                    _c(
+                      "a",
+                      {
+                        staticClass:
+                          "font-medium tracking-wide text-teal-300 transition-colors duration-200 hover:text-teal-accent-400",
+                        attrs: {
+                          href: _vm.route("aboutUs"),
+                          "aria-label": "Our product",
+                          title: "Our product"
+                        }
+                      },
+                      [_vm._v("About Us")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(0),
+                  _vm._v(" "),
+                  _vm._m(1),
+                  _vm._v(" "),
+                  _vm._m(2)
+                ]
+              ),
               _vm._v(" "),
-              _vm._m(1),
+              _vm._m(3),
               _vm._v(" "),
               _c("div", { staticClass: "lg:hidden" }, [
                 _c(
@@ -21865,7 +21896,7 @@ var render = function() {
                             ]
                           ),
                           _vm._v(" "),
-                          _vm._m(2)
+                          _vm._m(4)
                         ]
                       )
                     ])
@@ -21883,85 +21914,87 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "items-center hidden space-x-8 lg:flex" }, [
-      _c("li", [
-        _c(
-          "a",
-          {
-            staticClass:
-              "font-medium tracking-wide text-teal-300 transition-colors duration-200 hover:text-teal-accent-400",
-            attrs: {
-              href: "/",
-              "aria-label": "Our product",
-              title: "Our product"
-            }
-          },
-          [_vm._v("About Us")]
-        )
-      ]),
-      _vm._v(" "),
-      _c("li", [
-        _c(
-          "a",
-          {
-            staticClass:
-              "font-medium tracking-wide text-teal-300 transition-colors duration-200 hover:text-teal-accent-400",
-            attrs: {
-              href: "/",
-              "aria-label": "Our product",
-              title: "Our product"
-            }
-          },
-          [_vm._v("Features")]
-        )
-      ]),
-      _vm._v(" "),
-      _c("li", [
-        _c(
-          "a",
-          {
-            staticClass:
-              "font-medium tracking-wide text-teal-300 transition-colors duration-200 hover:text-teal-accent-400",
-            attrs: {
-              href: "/",
-              "aria-label": "Product pricing",
-              title: "Product pricing"
-            }
-          },
-          [_vm._v("Blog")]
-        )
-      ]),
-      _vm._v(" "),
-      _c("li", [
-        _c(
-          "a",
-          {
-            staticClass:
-              "font-medium tracking-wide text-teal-300 transition-colors duration-200 hover:text-teal-accent-400",
-            attrs: { href: "/", "aria-label": "About us", title: "About us" }
-          },
-          [_vm._v("About us")]
-        )
-      ])
+    return _c("li", [
+      _c(
+        "a",
+        {
+          staticClass:
+            "font-medium tracking-wide text-teal-300 transition-colors duration-200 hover:text-teal-accent-400",
+          attrs: {
+            href: "/",
+            "aria-label": "Our product",
+            title: "Our product"
+          }
+        },
+        [_vm._v("Features")]
+      )
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "items-center hidden space-x-8 lg:flex" }, [
-      _c("li", [
-        _c(
-          "a",
-          {
-            staticClass:
-              "inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none",
-            attrs: { href: "/", "aria-label": "Sign up", title: "Sign up" }
-          },
-          [_vm._v("\n                        Sign up\n                    ")]
-        )
-      ])
+    return _c("li", [
+      _c(
+        "a",
+        {
+          staticClass:
+            "font-medium tracking-wide text-teal-300 transition-colors duration-200 hover:text-teal-accent-400",
+          attrs: {
+            href: "/blogs",
+            "aria-label": "Product pricing",
+            title: "Product pricing"
+          }
+        },
+        [_vm._v("Blog")]
+      )
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c(
+        "a",
+        {
+          staticClass:
+            "font-medium tracking-wide text-teal-300 transition-colors duration-200 hover:text-teal-accent-400",
+          attrs: { href: "/teams", "aria-label": "About us", title: "About us" }
+        },
+        [_vm._v("Team")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "ul",
+      { staticClass: "flex items-center hidden space-x-8 lg:flex" },
+      [
+        _c("li", [
+          _c(
+            "a",
+            {
+              staticClass:
+                "inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none",
+              attrs: {
+                href: "/",
+                "aria-label": "Contact Us",
+                title: "Contact Us"
+              }
+            },
+            [
+              _vm._v(
+                "\n                        Contact Us\n                    "
+              )
+            ]
+          )
+        ])
+      ]
+    )
   },
   function() {
     var _vm = this
@@ -21976,7 +22009,7 @@ var staticRenderFns = [
               staticClass:
                 "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400",
               attrs: {
-                href: "/",
+                href: "/about-us",
                 "aria-label": "Our product",
                 title: "Our product"
               }
@@ -22008,7 +22041,7 @@ var staticRenderFns = [
               staticClass:
                 "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400",
               attrs: {
-                href: "/",
+                href: "/blogs",
                 "aria-label": "Product pricing",
                 title: "Product pricing"
               }
@@ -22023,9 +22056,9 @@ var staticRenderFns = [
             {
               staticClass:
                 "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400",
-              attrs: { href: "/", "aria-label": "About us", title: "About us" }
+              attrs: { href: "/teams", "aria-label": "Team", title: "Team" }
             },
-            [_vm._v("About us")]
+            [_vm._v("Team")]
           )
         ]),
         _vm._v(" "),
@@ -22035,11 +22068,15 @@ var staticRenderFns = [
             {
               staticClass:
                 "inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none",
-              attrs: { href: "/", "aria-label": "Sign up", title: "Sign up" }
+              attrs: {
+                href: "/",
+                "aria-label": "Contact Us",
+                title: "Contact Us"
+              }
             },
             [
               _vm._v(
-                "\n                                        Sign up\n                                    "
+                "\n                                        Contact Us\n                                    "
               )
             ]
           )

@@ -14,5 +14,11 @@ const app = new Vue({
     el: '#app',
     component: {
         // Example,
+    },
+    data() {
+        return {
+            isMenuOpen: false
+        };
     }
+
 });

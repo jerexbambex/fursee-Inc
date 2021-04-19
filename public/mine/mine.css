@@ -34,3 +34,7 @@
     transition-duration: .15s;
     transition-timing-function: cubic-bezier(.4, 0, .2, 1);
 }
+
+.active {
+    color: #0F172A;
+}
