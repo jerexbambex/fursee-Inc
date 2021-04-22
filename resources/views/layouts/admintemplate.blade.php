@@ -51,13 +51,15 @@
 </div>
 <!-- app-root @e -->
 <!-- JavaScript -->
-@jquery
-<script src="/admin/assets/js/bundle.js?ver=1.4.0"></script>
-<script src="/admin/assets/js/scripts.js?ver=1.4.0"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.js"></script>
-@toastr_js
-@toastr_render
-@livewireScripts
+{{-- @jquery --}}
+    <script src="/admin/assets/js/bundle.js?ver=2.4.0"></script>
+    <script src="/admin/assets/js/scripts.js?ver=2.4.0"></script>
+    <script src="/admin/assets/js/charts/gd-default.js?ver=2.4.0"></script>
+    <script src="/admin/assets/js/example-toastr.js?ver=2.4.0"></script>
+    @include('layouts.admin.flash-message')
+{{-- @toastr_js --}}
+{{-- @toastr_render --}}
+    @livewireScripts
 </body>
 
 </html>

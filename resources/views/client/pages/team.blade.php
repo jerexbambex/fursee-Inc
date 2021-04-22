@@ -39,49 +39,16 @@
                         <p class="rz lu">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consequat.</p>
                     </div> --}}
                     <div class="pf pc pp bh py pg" data-aos-id-team="">
-                        <div class="ds vq _r u_ dn de" data-aos="fade-up" data-aos-anchor="[data-aos-id-team]">
-                            <div class="np ng nw">
-                                <img class="nr sm" src="/open-pro/images/team-member-01.jpg" width="120" height="120" alt="Team member 01">
-                                <h4 class="text-gray-900 rz ro dark:text-gray-200">Lara Lamprecht</h4>
-                                <div class="la si">CEO &amp; Co-founder</div>
-                                <a class="text-purple-600 nc wb h_ pt hz" href="#0">@laraamprecht</a>
+                        @foreach($teams as $team)
+                            <div class="ds vq _r u_ dn de" data-aos="fade-up" data-aos-delay="{{ 100 * $team->id }}" data-aos-anchor="[data-aos-id-team]">
+                                <div class="np ng nw">
+                                    <img class="nr sm" src="{{ $team->userAvatar() }}" width="120" height="120" alt="Team member 02">
+                                    <h4 class="rz ro si">{{ $team->fullName() }}</h4>
+                                    <div class="la si">{{ $team->role }}</div>
+                                    <a class="text-purple-600 nc wb h_ pt hz" href="#0">@ {{ $team->handle }}</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="ds vq _r u_ dn de" data-aos="fade-up" data-aos-delay="100" data-aos-anchor="[data-aos-id-team]">
-                            <div class="np ng nw"><img class="nr sm" src="/open-pro/images/team-member-02.jpg" width="120" height="120" alt="Team member 02">
-                                <h4 class="rz ro si">Marie Koniuszek</h4>
-                                <div class="la si">CEO &amp; Co-founder</div><a class="text-purple-600 nc wb h_ pt hz" href="#0">@marie_moon</a></div>
-                        </div>
-                        <div class="ds vq _r u_ dn de" data-aos="fade-up" data-aos-delay="200" data-aos-anchor="[data-aos-id-team]">
-                            <div class="np ng nw"><img class="nr sm" src="/open-pro/images/team-member-03.jpg" width="120" height="120" alt="Team member 03">
-                                <h4 class="rz ro si">Greg Sebastian</h4>
-                                <div class="la si">Head of Design</div><a class="text-purple-600 nc wb h_ pt hz" href="#0">@mr_sebastian</a></div>
-                        </div>
-                        <div class="ds vq _r u_ dn de" data-aos="fade-up" data-aos-delay="300" data-aos-anchor="[data-aos-id-team]">
-                            <div class="np ng nw"><img class="nr sm" src="/open-pro/images/team-member-04.jpg" width="120" height="120" alt="Team member 04">
-                                <h4 class="rz ro si">Timothy Chandran</h4>
-                                <div class="la si">Product Executive</div><a class="text-purple-600 nc wb h_ pt hz" href="#0">@timothychandran</a></div>
-                        </div>
-                        <div class="ds vq _r u_ dn de" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-team]">
-                            <div class="np ng nw"><img class="nr sm" src="/open-pro/images/team-member-05.jpg" width="120" height="120" alt="Team member 05">
-                                <h4 class="rz ro si">Dominik Prasad</h4>
-                                <div class="la si">Backend Lead</div><a class="text-purple-600 nc wb h_ pt hz" href="#0">@dominikprasad</a></div>
-                        </div>
-                        <div class="ds vq _r u_ dn de" data-aos="fade-up" data-aos-delay="500" data-aos-anchor="[data-aos-id-team]">
-                            <div class="np ng nw"><img class="nr sm" src="/open-pro/images/team-member-06.jpg" width="120" height="120" alt="Team member 06">
-                                <h4 class="rz ro si">Darya Semenova</h4>
-                                <div class="la si">Backend Developer</div><a class="text-purple-600 nc wb h_ pt hz" href="#0">@daryamagic</a></div>
-                        </div>
-                        <div class="ds vq _r u_ dn de" data-aos="fade-up" data-aos-delay="600" data-aos-anchor="[data-aos-id-team]">
-                            <div class="np ng nw"><img class="nr sm" src="/open-pro/images/team-member-07.jpg" width="120" height="120" alt="Team member 07">
-                                <h4 class="rz ro si">Quentin Renvoye</h4>
-                                <div class="la si">Product Designer</div><a class="text-purple-600 nc wb h_ pt hz" href="#0">@quentinrenvoye</a></div>
-                        </div>
-                        <div class="ds vq _r u_ dn de" data-aos="fade-up" data-aos-delay="700" data-aos-anchor="[data-aos-id-team]">
-                            <div class="np ng nw"><img class="nr sm" src="/open-pro/images/team-member-08.jpg" width="120" height="120" alt="Team member 08">
-                                <h4 class="rz ro si">Alyssa Chuzeville</h4>
-                                <div class="la si">Community Lead</div><a class="text-purple-600 nc wb h_ pt hz" href="#0">@hello_chuzeville</a></div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>

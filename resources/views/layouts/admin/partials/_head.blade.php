@@ -23,4 +23,5 @@
 <!-- StyleSheets  -->
 <link rel="stylesheet" href="/admin/assets/css/dashlite.css?ver=2.4.0">
 <link id="skin-default" rel="stylesheet" href="/admin/assets/css/theme.css?ver=2.4.0">
-@toastr_css
+<link id="skin-default" rel="stylesheet" href="/mine/mine.css">
+{{-- @toastr_css --}}
