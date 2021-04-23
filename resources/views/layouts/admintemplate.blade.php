@@ -59,6 +59,8 @@
     @include('layouts.admin.flash-message')
 {{-- @toastr_js --}}
 {{-- @toastr_render --}}
+    @livewire('livewire-ui-modal')
+    @livewireUIScripts
     @livewireScripts
 </body>
 

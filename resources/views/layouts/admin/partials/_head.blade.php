@@ -24,4 +24,5 @@
 <link rel="stylesheet" href="/admin/assets/css/dashlite.css?ver=2.4.0">
 <link id="skin-default" rel="stylesheet" href="/admin/assets/css/theme.css?ver=2.4.0">
 <link id="skin-default" rel="stylesheet" href="/mine/mine.css">
+@livewireStyles
 {{-- @toastr_css --}}
