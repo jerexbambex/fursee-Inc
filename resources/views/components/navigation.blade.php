@@ -69,7 +69,7 @@
                 <li>
                     <a
                         href="/"
-                        class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded-lg shadow-md bg-blue-gray-700 hover:bg-blue-gray-900 focus:shadow-outline focus:outline-none"
+                        class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded-lg shadow-md bg-blue-gray-900 hover:bg-blue-gray-600 focus:shadow-outline focus:outline-none"
                         aria-label="Contact Us"
                         title="Contact Us"
                     >
@@ -210,7 +210,7 @@
                                 <li>
                                     <a
                                         href="/"
-                                        class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-cyan-900 hover:bg-cyan-accent-700 focus:shadow-outline focus:outline-none"
+                                        class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-gray-900 hover:bg-blue-gray-600 focus:shadow-outline focus:outline-none"
                                         aria-label="Contact Us"
                                         title="Contact Us"
                                     >

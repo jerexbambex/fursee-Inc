@@ -8,7 +8,7 @@ use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
 
 trait ImageUpload
 {
-    public function imageUpload($avatar, $width = 455, $height = 475)
+    public function imageUpload($avatar, $width = 455, $height = 475): array
     {
         //Upload to Cloudinary
         $response = Cloudinary::upload($avatar->getRealPath(), [

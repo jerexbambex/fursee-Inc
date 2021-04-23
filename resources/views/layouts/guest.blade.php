@@ -22,7 +22,7 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
 
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-tailwind.png">
+    {{-- <link rel="icon" type="image/png" sizes="16x16" href="/open-pro/images/favicon-tailwind.png"> --}}
 </head>
 
 <body class="bg-gray-100 dark:bg-gray-900 ri ce ls cn font-circular-regular">
@@ -138,13 +138,13 @@
             </div> --}}
             {{ $slot }}
 
-            <div class="relative z-50 hidden navbar-menu">
+            {{-- <div class="relative z-50 hidden navbar-menu">
                 <div class="fixed inset-0 bg-gray-800 opacity-25 navbar-backdrop"></div>
                 <nav
                     class="fixed top-0 bottom-0 left-0 flex flex-col w-5/6 max-w-sm px-6 py-6 overflow-y-auto bg-gray-100 border-r dark:bg-gray-900">
                     <div class="flex items-center mb-8">
                         <a class="mr-auto text-3xl font-bold leading-none" href="#"><img
-                                src="atis-assets/logo/atis/atis-mono-black.svg" alt="Fursee Inc" width="NaN"></a>
+                                src="#" alt="Fursee Inc" width="NaN"></a>
                         <button class="navbar-close">
                             <svg class="w-6 h-6 text-gray-400 cursor-pointer hover:text-gray-500"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
@@ -183,14 +183,14 @@
                             <span>&copy; 2020 All rights reserved.</span>
                         </p>
                         <div class="text-center">
-                            <a class="inline-block px-1" href="#"><img src="atis-assets/social/facebook.svg" alt=""></a>
-                            <a class="inline-block px-1" href="#"><img src="atis-assets/social/twitter.svg" alt=""></a>
-                            <a class="inline-block px-1" href="#"><img src="atis-assets/social/instagram.svg"
+                            <a class="inline-block px-1" href="#"><img src="#" alt=""></a>
+                            <a class="inline-block px-1" href="#"><img src="#" alt=""></a>
+                            <a class="inline-block px-1" href="#"><img src="#"
                                     alt=""></a>
                         </div>
                     </div>
                 </nav>
-            </div>
+            </div> --}}
         </section>
 
         <footer class="">
