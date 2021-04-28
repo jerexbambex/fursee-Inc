@@ -21,4 +21,12 @@ class Blog extends Model
     {
         return $this->belongsToMany('App\Models\Category');
     }
+
+    public function avatar(): string
+    {
+        if ($this->avatar == null) {
+            return 'https://res.cloudinary.com/dj6bwuwu6/image/upload/v1595346948/fego-placeholder_aokgwg.jpg';
+        }
+        return json_decode($this->avatar)->secure_url;
+    }
 }

@@ -38,9 +38,9 @@
                                     <a class="wy h_ pt hz text-blue-gray-700 dark:text-gray-200" href="{{ route('blog.show', $latestPost->path()) }}">{{ $latestPost->title }}.</a>
                                 </h3>
                             </header>
-                            <p class="text-gray-600 rq rt dark:text-gray-300">
+                            <div class="text-gray-600 rq rt dark:text-gray-300 leading-relaxed font-light">
                                 {!! nl2br(Str::limit($latestPost->body, 150)) !!}
-                            </p>
+                            </div>
                             <footer class="np nw sd">
                                 <a href="#0"><img class="nr rn sv" src="/open-pro/images/news-author-04.jpg" width="40" height="40" alt="Author 04"></a>
                                 <div>
@@ -91,7 +91,7 @@
                         @endforeach
                     </div>
                 </div>
-                
+
                 <nav class="np nj ak" role="navigation" aria-label="Pagination Navigation">
                     <ul class="nd ny ro r_ ic">
                         {{ $blogs->links() }}

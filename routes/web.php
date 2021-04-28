@@ -3,6 +3,7 @@
 use App\Http\Controllers\Client\AboutUsController;
 use App\Http\Controllers\Client\BlogController;
 use App\Http\Controllers\Client\TeamController;
+use App\Http\Controllers\Dashboard\AdminBlogController;
 use App\Http\Controllers\Dashboard\AdminTeamController;
 use App\Http\Controllers\Dashboard\DashboardController;
 use Illuminate\Support\Facades\Route;
@@ -30,4 +31,11 @@ Route::group(['prefix' => 'dashboard', 'namespace' => 'Dashboard'], function () 
     Route::post('/teams', [AdminTeamController::class, 'store'])->name('admin.team.store');
     Route::patch('/teams/{team}', [AdminTeamController::class, 'update'])->name('admin.team.update');
     Route::delete('/teams/{team}', [AdminTeamController::class, 'destroy'])->name('admin.team.delete');
+
+    //Blogs
+    Route::get('/blogs', [AdminBlogController::class, 'index'])->name('admin.blog.index');
+    Route::get('/blogs/{blog}', [AdminBlogController::class, 'show'])->name('admin.blog.show');
+    Route::get('/blogs/edit/{blog}', [AdminBlogController::class, 'edit'])->name('admin.blog.edit');
+    Route::patch('/blogs/{blog}', [AdminBlogController::class, 'update'])->name('admin.blog.update');
+    Route::delete('/blogs/{blog}', [AdminBlogController::class, 'destroy'])->name('admin.blog.delete');
 });

@@ -310,9 +310,10 @@
                 <div class="modal-content">
                     <a href="#" class="close" data-dismiss="modal" aria-label="Close"><em class="icon ni ni-cross"></em></a>
                     <div class="modal-body modal-body-md">
-                        <h4 class="nk-modal-title title">Removing {{ $team->name }}<br><br>from the team</h4>
-                        <p><strong>Are you sure you want to remove {{ $team->name }} ?</strong></p>
-                        <p>If you continue, {{ $team->name }} will no longer be in the team. But you can re-add your choice person at any time.</p>
+                        <h4 class="nk-modal-title title">Removing {{ $team->fullName() }}</h4>
+                        {{-- <p><strong>Are you sure you want to remove {{ $team->fullName() }} ?</strong></p> --}}
+                        <p class="fs-16px">If you continue, {{ $team->fullName() }} will no longer be in the team.</p>
+                        <p class="fs-16px">You can re-add your choice person at any time.</p>
                         <div class="form">
                             <ul class="flex-wrap align-center g-3">
                                 <li>

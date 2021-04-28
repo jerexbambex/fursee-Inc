@@ -42,12 +42,12 @@
                                 </div>
                             </div>
                         </header>
-                        <figure class="sj k_ kk" data-aos="fade-up" data-aos-delay="600"><img class="cv" src="/open-pro/images/news-single.jpg" width="1024" height="576" alt="News single"></figure>
-                        <div class="text-gray-800 rq dark:text-gray-200">
+                        <figure class="sj k_ kk" data-aos="fade-up" data-aos-delay="600"><img class="cv" src="{{ $blog->avatar() }}" width="1024" height="576" alt="News single"></figure>
+                        <div class="font-light leading-loose text-gray-600 rq dark:text-gray-200 text-loose">
                             {!! nl2br($blog->body) !!}
                         </div>
                         <footer>
-                            <div class="dp dm dy lt vk">
+                            <div class="mt-5 dp dm dy lt vk">
                                 <div class="rq lu l_">Originally published at
                                     <a class="ls" href="/">https://furseeinc.com/</a>.</div>
                                 <ul class="nd sd vt ve">

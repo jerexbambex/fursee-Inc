@@ -9,7 +9,6 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        session()->flash('success', 'You have successfully added Dapo as a member of the Executives');
         return view('admin.index');
     }
 }
