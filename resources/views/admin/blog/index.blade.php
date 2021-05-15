@@ -32,8 +32,8 @@
                         <div class="toggle-expand-content" data-content="pageMenu">
                             <ul class="nk-block-tools g-3">
                                 <li>
-                                    <a href="" class="btn btn-primary" data-toggle="modal" data-target="#add-member">
-                                        <em class="icon ni ni-plus"></em><span>Add New Member</span>
+                                    <a href="{{ route('admin.blog.create') }}" class="btn btn-primary">
+                                        <em class="icon ni ni-plus"></em><span>Add New Post</span>
                                     </a>
                                 </li>
                             </ul>
@@ -117,10 +117,10 @@
                                     </button>
                                 </li>
                                 <li>
-                                    <a href="#" class="btn btn-light" data-dismiss="modal">Never mind, don't revoke</a>
+                                    <a href="#" class="btn btn-light" data-dismiss="modal">Never mind, don't delete</a>
                                 </li>
                             </ul>
-                            <form method="POST" action="{{ route('admin.team.delete', $blog->path()) }}" id="subscription-cancel-confirmed{{ $blog->id }}">
+                            <form method="POST" action="{{ route('admin.blog.delete', $blog->id) }}" id="subscription-cancel-confirmed{{ $blog->id }}">
                                 @csrf
                                 @method('DELETE')
                             </form>

@@ -21,19 +21,26 @@
   <component name="ChangeListManager">
     <list default="true" id="839bef2c-e714-49dd-b37e-a3fa0c590d7d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/BlogController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/AdminBlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/AdminBlogController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/AdminTeamController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/AdminTeamController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/DashboardController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Traits/ImageUpload.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Traits/ImageUpload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Blog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/teams/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/teams/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/open-pro/images/mine/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/open-pro/images/mine/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/open-pro/images/mine/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/open-pro/images/mine/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/open-pro/images/mine/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/open-pro/style.9408d6b5665a4db129e7.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/open-pro/style.9408d6b5665a4db129e7.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/blog/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/blog/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/blog/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/blog/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/blog/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/blog/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/blog/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/blog/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/client/pages/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/pages/about.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/client/pages/blog/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/pages/blog/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/client/pages/blog/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/pages/blog/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/pages/team.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/pages/team.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin/includes/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admintemplate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admintemplate.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/navigation.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -227,6 +234,12 @@
       <workItem from="1619185064162" duration="1888000" />
       <workItem from="1619381800353" duration="27170000" />
       <workItem from="1619624261465" duration="1361000" />
+      <workItem from="1619665556962" duration="1708000" />
+      <workItem from="1619704495924" duration="644000" />
+      <workItem from="1619705653292" duration="3066000" />
+      <workItem from="1619944085131" duration="633000" />
+      <workItem from="1620900356592" duration="2930000" />
+      <workItem from="1621011505147" duration="1574000" />
     </task>
     <servers />
   </component>

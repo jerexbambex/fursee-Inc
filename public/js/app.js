@@ -4069,7 +4069,8 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_1__.default({
   },
   data: function data() {
     return {
-      isMenuOpen: false
+      isMenuOpen: false,
+      isAlertOpen: true
     };
   }
 });

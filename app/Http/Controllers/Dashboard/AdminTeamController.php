@@ -31,7 +31,7 @@ class AdminTeamController extends Controller
             request()->validate([
                 'avatar' => ['required', 'image', 'mimes:png,jpg,jpeg', 'max:4048'],
             ]);
-            $results = $this->imageUpload($request->file('avatar', 455, 475));
+            $results = $this->imageUpload($request->file('avatar'), 455, 475);
 
             $attributes['avatar'] = json_encode($results);
         }

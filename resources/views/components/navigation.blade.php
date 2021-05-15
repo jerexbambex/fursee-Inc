@@ -1,4 +1,4 @@
-<div class="bg-opacity-0 bg-gray-50 dark:bg-gray-900">
+<div class="fu cv cg">
     <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div class="relative flex items-center justify-between">
             <a
@@ -30,28 +30,29 @@
             <ul class="flex items-center hidden space-x-8 lg:flex">
                 <li>
                     <a
-                        href="{{ route('aboutUs') }}"
+                        href="/"
                         aria-label="Our product"
                         title="Our product"
-                        class="font-medium tracking-wide transition-colors duration-200 hover:text-blue-gray-700 {{ (request()->is('about-us')) ? 'active' : 'text-teal-300' }}"
-                        >About Us</a
+                        class="font-medium tracking-wide transition-colors duration-200 hover:text-blue-gray-700 {{ (request()->is('/')) ? 'font-bold text-blue-gray-900 dark:text-gray-50 ' : 'text-gray-600' }}"
+                        >Home</a
                     >
                 </li>
                 <li>
                     <a
-                        href="/"
+                        href="{{ route('aboutUs') }}"
                         aria-label="Our product"
                         title="Our product"
-                        class="font-medium tracking-wide transition-colors duration-200 hover:text-blue-gray-700 {{ (request()->is('/')) ? 'active' : 'text-teal-300' }}"
-                        >Features</a
+                        class="font-medium tracking-wide transition-colors duration-200 hover:text-blue-gray-700 {{ (request()->is('about-us')) ? 'font-bold text-blue-gray-900 dark:text-gray-50 ' : 'text-gray-600' }}"
+                        >About Us</a
                     >
                 </li>
+                
                 <li>
                     <a
                         href="{{ route('blog.index') }}"
                         aria-label="Product pricing"
                         title="Product pricing"
-                        class="font-medium tracking-wide transition-colors duration-200 hover:text-blue-gray-700 {{ (request()->is('blogs*')) ? 'active' : 'text-teal-300' }}"
+                        class="font-medium tracking-wide transition-colors duration-200 hover:text-blue-gray-700 {{ (request()->is('blogs*')) ? 'font-bold text-blue-gray-900 dark:text-gray-50 ' : 'text-gray-600' }}"
                         >Blog</a
                     >
                 </li>
@@ -60,7 +61,7 @@
                         href="{{ route('teams') }}"
                         aria-label="About us"
                         title="About us"
-                        class="font-medium tracking-wide transition-colors duration-200 hover:text-blue-gray-700 {{ (request()->is('teams')) ? 'active' : 'text-teal-300' }}"
+                        class="font-medium tracking-wide transition-colors duration-200 hover:text-blue-gray-700 {{ (request()->is('teams')) ? 'font-bold text-blue-gray-900 dark:text-gray-50 ' : 'text-gray-600' }}"
                         >Team</a
                     >
                 </li>
@@ -68,8 +69,8 @@
             <ul class="flex items-center hidden space-x-8 lg:flex">
                 <li>
                     <a
-                        href="/"
-                        class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded-lg shadow-md bg-blue-gray-900 hover:bg-blue-gray-600 focus:shadow-outline focus:outline-none"
+                        href="{{ route('contactUs') }}"
+                        class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded-lg shadow-md bg-blue-gray-900 hover:bg-blue-gray-800 dark:bg-blue-gray-600 dark:hover:bg-gray-500 dark:hover:text-gray-50 focus:shadow-outline focus:outline"
                         aria-label="Contact Us"
                         title="Contact Us"
                     >
@@ -173,6 +174,15 @@
                             <ul class="space-y-4">
                                 <li>
                                     <a
+                                        href="/"
+                                        aria-label="Our product"
+                                        title="Our product"
+                                        class="font-medium tracking-wide text-gray-700 transition-colors duration-200 dark:text-gray-300 hover:text-deep-purple-accent-400"
+                                        >Home</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
                                         href="{{ route('aboutUs') }}"
                                         aria-label="Our product"
                                         title="Our product"
@@ -180,15 +190,7 @@
                                         >About Us</a
                                     >
                                 </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        aria-label="Our product"
-                                        title="Our product"
-                                        class="font-medium tracking-wide text-gray-700 transition-colors duration-200 dark:text-gray-300 hover:text-deep-purple-accent-400"
-                                        >Features</a
-                                    >
-                                </li>
+                                
                                 <li>
                                     <a
                                         href="{{ route('blog.index') }}"
@@ -209,8 +211,8 @@
                                 </li>
                                 <li>
                                     <a
-                                        href="/"
-                                        class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-gray-900 hover:bg-blue-gray-600 focus:shadow-outline focus:outline-none"
+                                        href="{{ route('contactUs') }}"
+                                        class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-gray-900 hover:bg-blue-gray-800 focus:shadow-outline focus:outline-none"
                                         aria-label="Contact Us"
                                         title="Contact Us"
                                     >

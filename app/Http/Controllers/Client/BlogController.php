@@ -11,8 +11,7 @@ class BlogController extends Controller
 {
     public function index()
     {
-        $blogs = Blog::with('category')->paginate(15);
-        // dd($blogs->total());
+        $blogs = Blog::latest()->with('category')->paginate(15);
         $latestPost = Blog::with('category')->latest()->first();
 
         return view('client.pages.blog.index', compact('blogs', 'latestPost'));

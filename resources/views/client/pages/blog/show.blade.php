@@ -35,7 +35,7 @@
                                     <ul class="np ny rk ro ic">
                                         @foreach($blog->category as $category)
                                             <li class="ia">
-                                                <a class="nd lt li uy uk nr yi yl h_ pt hz" href="#0">{{$category->name}}</a>
+                                                <a class="nd lt li uy uk nr yi yl h_ pt bg-blue-gray-400 hover:bg-blue-gray-700" href="#0">{{$category->name}}</a>
                                             </li>
                                         @endforeach
                                     </ul>
@@ -43,8 +43,9 @@
                             </div>
                         </header>
                         <figure class="sj k_ kk" data-aos="fade-up" data-aos-delay="600"><img class="cv" src="{{ $blog->avatar() }}" width="1024" height="576" alt="News single"></figure>
-                        <div class="font-light leading-loose text-gray-600 rq dark:text-gray-200 text-loose">
+                        <div class="leading-loose text-gray-600 rq dark:text-gray-200 text-loose">
                             {!! nl2br($blog->body) !!}
+                            {{-- {!! $blog->body !!} --}}
                         </div>
                         <footer>
                             <div class="mt-5 dp dm dy lt vk">
@@ -91,7 +92,7 @@
                                             <ul class="np ny rk ro ic">
                                                 @foreach($blog->category as $category)
                                                     <li class="ia">
-                                                        <a class="nd lt li uy uk nr yi yl h_ pt hz" href="#0">{{$category->name}}</a>
+                                                        <a class="nd lt li uy uk nr yi yl h_ pt bg-blue-gray-400 hover:bg-blue-gray-700" href="#0">{{$category->name}}</a>
                                                     </li>
                                                 @endforeach
                                             </ul>

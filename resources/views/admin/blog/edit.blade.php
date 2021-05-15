@@ -6,9 +6,9 @@
         <div class="nk-block-between">
             <div class="nk-block-head-content">
                 <h5 class="nk-block-title page-title font-circular-regular">Blog Post {{ $blog->id }}</h5>
-{{--                <div class="nk-block-des text-soft">--}}
-{{--                    <p>You have total of {{ $blogs->count()}} posts.</p>--}}
-{{--                </div>--}}
+               {{-- <div class="nk-block-des text-soft">
+                   <p>You have total of {{ $blogs->count()}} posts.</p>
+               </div> --}}
             </div>
             <!-- .nk-block-head-content -->
             <div class="nk-block-head-content">
@@ -84,24 +84,24 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-12 mt-3">
-                                <img src="{{ $blog->avatar() }}" class="float-md-left avatar-medium img-thumbnail shadow mr-md-4" id="previewImg" alt=""><br>
+                            <div class="mt-3 col-md-12">
+                                <img src="{{ $blog->avatar() }}" class="shadow float-md-left avatar-medium img-thumbnail mr-md-4" id="previewImg" alt=""><br>
                                 @error('avatar')
                                 <span id="fv-full-name-error" class="invalid">{{ $message}}</span>
                                 @enderror
 
-                                <div class="mt-md-4 mt-3 mt-sm-0 font-montserrat">
+                                <div class="mt-3 mt-md-4 mt-sm-0 font-montserrat">
                                     <input type="file" class="d-none" name="avatar" id="image_upload" onchange="previewFile(this);"/>
-                                    <a href="javascript:void(0)" class="btn btn-outline-info btn-sm btn-brand mt-2" onclick="$('#image_upload').click()">Change Picture</a>
+                                    <a href="javascript:void(0)" class="mt-2 btn btn-outline-info btn-sm btn-brand" onclick="$('#image_upload').click()">Change Picture</a>
                                 </div>
                             </div>
 
-                            <div class="col-md-12 mt-3">
+                            <div class="mt-3 col-md-12">
                         <textarea rows="20" name="body">
                             {{ $blog->body }}
                         </textarea>
                             </div>
-                            <div class="col-12 mt-5">
+                            <div class="mt-5 col-12">
                                 <button type="submit" class="btn btn-lg btn-primary" id="submitButton"
                                         onclick="event.preventDefault(); document.getElementById('form-submit').submit(); return DisplayProgressMessage(this, 'Updating...');"
                                 >Update message</button>
@@ -117,7 +117,7 @@
     <script>
         function DisplayProgressMessage(ctl, msg) {
             $(ctl).prop("disabled", true);
-            $(ctl).html("<div class='spinner-grow spinner-grow-sm mr-3' role='status'><span class='sr-only'>Loading...</span></div>" + msg);
+            $(ctl).html("<div class='mr-3 spinner-grow spinner-grow-sm' role='status'><span class='sr-only'>Loading...</span></div>" + msg);
             return true;
         }
     </script>

@@ -14,11 +14,16 @@ class AdminBlogController extends Controller
 
     public function index()
     {
-        $blogs = Blog::with('category')->latest()->get();
+        $blogs = Blog::latest()->with('category')->get();
         return view('admin.blog.index', compact('blogs'));
     }
 
-    public function create(Request $request)
+    public function create()
+    {
+        return view('admin.blog.create');
+    }
+
+    public function store(Request $request)
     {
         $attributes = $request->validate([
             'title' => ['required', 'max:100'],
@@ -39,11 +44,6 @@ class AdminBlogController extends Controller
 
         session()->flash('success', 'You have successfully added a new post.');
         return back();
-    }
-
-    public function store()
-    {
-        return 'store';
     }
 
     public function show(Blog $blog)
@@ -67,9 +67,11 @@ class AdminBlogController extends Controller
             $request->validate([
                 'avatar' => ['required', 'image', 'mimes:png,jpg,jpeg', 'max:4048'],
             ]);
+
             if ($blog->avatar) {
                 $publicId = json_decode($blog->avatar)->public_id;
-                Cloudinary::destroy($publicId, $options = []);
+
+                $this->imageDelete($publicId);
             }
 
             $results = $this->imageUpload(request()->file('avatar'));
@@ -85,6 +87,10 @@ class AdminBlogController extends Controller
 
     public function destroy(Blog $blog)
     {
+        if ($blog->avatar) {
+            $publicId = json_decode($blog->avatar)->public_id;
+            Cloudinary::destroy($publicId, $options = []);
+        }
         $blog->delete();
 
         session()->flash('success', 'The post was successfully deleted');

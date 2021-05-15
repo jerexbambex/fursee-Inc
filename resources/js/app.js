@@ -17,7 +17,8 @@ const app = new Vue({
     },
     data() {
         return {
-            isMenuOpen: false
+            isMenuOpen: false,
+            isAlertOpen: true
         };
     }
 

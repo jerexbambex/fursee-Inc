@@ -40,11 +40,11 @@
         </div><!-- .nk-block-head -->
         <div class="nk-block">
             <div class="card card-bordered pl-auto pr-auto justify-content-center">
-                <div class="card-inner card-inner-xl mx-auto md:w-60" style="max-width: 780px;">
+                <div class="card-inner card-inner-xl mx-auto md:w-60" style="max-width: 980px;">
                     <article class="entry mb-5 text-left">
-                        <h2 class="font-circular-head">{{ $blog->title }}</h2>
-                        <p><img src="{{ $blog->avatar() }}" alt=""></p>
-                        <div class="fs-18px leading-loose">
+                        <h2 class="font-circular-regular mb-5">{{ $blog->title }}</h2>
+                        <p class="mb-5"><img src="{{ $blog->avatar() }}" alt=""></p>
+                        <div class="fs-20px font-weight-light">
                             {!! nl2br($blog->body) !!}
                         </div>
                     </article>

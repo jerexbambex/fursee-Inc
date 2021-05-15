@@ -306,7 +306,7 @@
 
     <section>
         <div class="rounded-lg oq i_ uj dt">
-            <div class="fa yi ai ar vp vh" data-aos="fade-up">
+            <div class="fa bg-blue-gray-900 ai ar vp vh" data-aos="fade-up">
                 <div class="fu fc fl b_ fs" aria-hidden="true">
                     <svg width="238" height="110" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <defs>
@@ -324,7 +324,7 @@
                         <p class="wd rq">Join our newsletter to get top news before anyone else.</p>
                     </div>
                     <form class="cv ga">
-                        <div class="np ng pl nj ow i_ pq ge"><input type="email" class="rounded-lg cv b ys no yy yw uj ux sa pb pw lr wf" placeholder="Your best email…" aria-label="Your best email…">
+                        <div class="np ng pl nj ow i_ pq ge"><input type="email" class="rounded-lg cv b ys no yy yw uj ux sa pb pw text-blue-gray-700 wf" placeholder="Your best email…" aria-label="Your best email…">
                             <a class="text-purple-600 rounded-lg shadow a yr tr" href="#0">Subscribe</a>
                         </div>
                     </form>

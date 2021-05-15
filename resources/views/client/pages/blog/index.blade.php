@@ -21,7 +21,7 @@
                     <article class="ox i_ vu nv mi cw ka _s _h nw">
                         <a class="fa nc lx" href="{{ route('blog.show', $latestPost->path()) }}" data-aos="fade-right" data-aos-delay="200">
                             <div class="hidden fu ff _ dh he kp kh _v _d xi xo h_ pi hq fs" aria-hidden="true"></div>
-                            <figure class="fa rf fn kr _e uu he kd _m xi xo h_ pi hq"><img class="fu ff cv rw un he xt h_ pi hq" src="/open-pro/images/blog-post-01.jpg" width="540" height="303" alt="Blog post 01"></figure>
+                            <figure class="fa rf fn kr _e uu he kd _m xi xo h_ pi hq"><img class="fu ff cv rw un he xt h_ pi hq" src="{{ $latestPost->avatar() }}" width="540" height="303" alt="Blog post 01"></figure>
                         </a>
                         <div data-aos="fade-left" data-aos-delay="200">
                             <header>
@@ -29,16 +29,16 @@
                                     <ul class="np ny rk ro ic">
                                         @foreach($latestPost->category as $category)
                                             <li class="ia">
-                                                <a class="nd lt li uy uk nr yi yl h_ pt hz" href="#0">{{$category->name}}</a>
+                                                <a class="nd lt li uy uk nr yl h_ pt bg-blue-gray-400 hover:bg-blue-gray-700" href="#0">{{$category->name}}</a>
                                             </li>
                                         @endforeach
                                     </ul>
                                 </div>
                                 <h3 class="h3 bf kw sa">
-                                    <a class="wy h_ pt hz text-blue-gray-700 dark:text-gray-200" href="{{ route('blog.show', $latestPost->path()) }}">{{ $latestPost->title }}.</a>
+                                    <a class="wy h_ pt hz text-blue-gray-700 hover:text-blue-gray-900 dark:text-gray-200 dark:hover:text-gray-400" href="{{ route('blog.show', $latestPost->path()) }}">{{ $latestPost->title }}.</a>
                                 </h3>
                             </header>
-                            <div class="text-gray-600 rq rt dark:text-gray-300 leading-relaxed font-light">
+                            <div class="font-light leading-relaxed text-gray-600 rq rt dark:text-gray-300">
                                 {!! nl2br(Str::limit($latestPost->body, 150)) !!}
                             </div>
                             <footer class="np nw sd">
@@ -60,22 +60,24 @@
                             <article class="np ng rw" data-aos="fade-up">
                                 <header>
                                     <a class="nc sw" href="{{ route('blog.show', $blog->path()) }}">
-                                        <figure class="fa rf fn uu nt"><img class="fu ff cv rw un he xt h_ pi hq" src="/open-pro/images/news-01.jpg" width="352" height="198" alt="News 01"></figure>
+                                        <figure class="fa rf fn uu nt">
+                                            <img class="fu ff cv rw un he xt h_ pi hq" src="{{ $blog->avatar() }}" width="352" height="198" alt="News 01">
+                                        </figure>
                                     </a>
                                     <div class="sh">
                                         <ul class="np ny rk ro ic">
                                             @foreach($blog->category as $category)
                                                 <li class="ia">
-                                                    <a class="nd lt li uy uk nr yi yl h_ pt hz" href="#0">{{ $category->name }}</a>
+                                                    <a class="nd lt li uy uk nr yl h_ pt bg-blue-gray-400 hover:bg-blue-gray-700" href="#0">{{ $category->name }}</a>
                                                 </li>
                                             @endforeach
                                         </ul>
                                     </div>
                                     <h3 class="font-light h4 sa">
-                                        <a class="wy h_ pt hz text-blue-gray-700 dark:text-gray-200" href="{{ route('blog.show', $blog->path()) }}">{{ $blog->title }}.</a>
+                                        <a class="wy h_ pt hz text-blue-gray-700 dark:text-gray-200 hover:text-blue-gray-900 dark:hover:text-gray-400" href="{{ route('blog.show', $blog->path()) }}">{{ $blog->title }}.</a>
                                     </h3>
                                 </header>
-                                <p class="text-gray-600 rq rt dark:text-gray-300">
+                                <p class="text-gray-600 rq rt dark:text-gray-500">
                                     {!! nl2br(Str::limit($blog->body, 150)) !!}
                                 </p>
                                 <footer class="np nw sd">

@@ -1,6 +1,6 @@
 <x-guest-layout>
     <section class="fa">
-        <div class="fu ff"><img class="cv rw un" src="/open-pro/images/mac-seat.jpg" width="1440" height="394"
+        <div class="fu ff"><img class="cv rw un" src="https://res.cloudinary.com/dj6bwuwu6/image/upload/v1620220434/fursee/mac-seat.jpg" width="1440" height="394"
                 alt="About">
             <div class="fu ff j ui" aria-hidden="true"></div>
         </div>
@@ -20,15 +20,15 @@
             <div class="o_ i_">
                 <div class="fa cv rf fr">
                     <figure class="fu ry" style="top:45%;width:41.67%;max-width:320px" data-aos="fade-right"><img
-                            src="/open-pro/images/mine/2.jpg" width="320" height="240" alt="Team mosaic 02"></figure>
+                            src="https://res.cloudinary.com/dj6bwuwu6/image/upload/v1620220457/fursee/2.jpg" width="320" height="240" alt="Team mosaic 02"></figure>
                     <figure class="fa i_ ry" style="width:78.13%;max-width:600px" data-aos="fade-down"
-                        data-aos-delay="100"><img src="/open-pro/images/mine/1.jpg" width="600" height="338"
+                        data-aos-delay="100"><img src="https://res.cloudinary.com/dj6bwuwu6/image/upload/v1620220454/fursee/1.jpg" width="600" height="338"
                             alt="Team mosaic 01"></figure>
                     <figure class="fu ry" style="top:8.5%;right:0;width:32.55%;max-width:250px" data-aos="fade-left"
-                        data-aos-delay="200"><img src="/open-pro/images/mine/3.jpg" width="250" height="188"
+                        data-aos-delay="200"><img src="https://res.cloudinary.com/dj6bwuwu6/image/upload/v1620220460/fursee/3.jpg" width="250" height="188"
                             alt="Team mosaic 03"></figure>
                     <figure class="fu ry" style="bottom:0;right:20%;width:25.52%;max-width:196px" data-aos="fade-up"
-                        data-aos-delay="300"><img src="/open-pro/images/high-level-overview-1.png" width="196"
+                        data-aos-delay="300"><img src="https://res.cloudinary.com/dj6bwuwu6/image/upload/v1620220427/fursee/high-level-overview-1.png" width="196"
                             height="196" alt="Team mosaic 04"></figure>
                 </div>
             </div>
