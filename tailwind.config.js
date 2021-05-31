@@ -2,10 +2,9 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 const colors = require('tailwindcss/colors')
 
 module.exports = {
+    mode: "jit",
     purge: [
-        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
-        './storage/framework/views/*.php',
-        './resources/views/**/*.blade.php',
+        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php', './storage/framework/views/*.php', './resources/views/**/*.blade.php',
     ],
 
     darkMode: 'media',
@@ -13,7 +12,10 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                sans: [
+                    'Nunito',
+                    ...defaultTheme.fontFamily.sans
+                ]
             },
             colors: {
                 transparent: 'transparent',
@@ -38,7 +40,7 @@ module.exports = {
                     'accent-100': '#b388ff',
                     'accent-200': '#7c4dff',
                     'accent-400': '#651fff',
-                    'accent-700': '#6200ea',
+                    'accent-700': '#6200ea'
                 },
                 teal: {
                     50: '#e0f2f1',
@@ -54,7 +56,7 @@ module.exports = {
                     'accent-100': '#a7ffeb',
                     'accent-200': '#64ffda',
                     'accent-400': '#1de9b6',
-                    'accent-700': '#00bfa5',
+                    'accent-700': '#00bfa5'
                 },
                 pink: {
                     50: '#fce4ec',
@@ -70,7 +72,7 @@ module.exports = {
                     'accent-100': '#ff80ab',
                     'accent-200': '#ff4081',
                     'accent-400': '#f50057',
-                    'accent-700': '#c51162',
+                    'accent-700': '#c51162'
                 },
                 cyan: {
                     50: '#e0f7fa',
@@ -86,7 +88,7 @@ module.exports = {
                     'accent-100': '#84ffff',
                     'accent-200': '#18ffff',
                     'accent-400': '#00e5ff',
-                    'accent-700': '#00b8d4',
+                    'accent-700': '#00b8d4'
                 },
                 'blue-gray': {
                     50: '#F8FAFC',
@@ -98,7 +100,7 @@ module.exports = {
                     600: '#475569',
                     700: '#334155',
                     800: '#1E293B',
-                    900: '#0F172A',
+                    900: '#0F172A'
                 },
                 green: {
                     50: '#e8f5e9',
@@ -114,7 +116,7 @@ module.exports = {
                     'accent-100': '#b9f6ca',
                     'accent-200': '#69f0ae',
                     'accent-400': '#00e676',
-                    'accent-700': '#00c853',
+                    'accent-700': '#00c853'
                 },
                 'light-green': {
                     50: '#f1f8e9',
@@ -130,7 +132,7 @@ module.exports = {
                     'accent-100': '#ccff90',
                     'accent-200': '#b2ff59',
                     'accent-400': '#76ff03',
-                    'accent-700': '#64dd17',
+                    'accent-700': '#64dd17'
                 },
                 lime: {
                     50: '#f9fbe7',
@@ -146,7 +148,7 @@ module.exports = {
                     'accent-100': '#f4ff81',
                     'accent-200': '#eeff41',
                     'accent-400': '#c6ff00',
-                    'accent-700': '#aeea00',
+                    'accent-700': '#aeea00'
                 },
                 amber: {
                     50: '#fff8e1',
@@ -162,7 +164,7 @@ module.exports = {
                     'accent-100': '#ffe57f',
                     'accent-200': '#ffd740',
                     'accent-400': '#ffc400',
-                    'accent-700': '#ffab00',
+                    'accent-700': '#ffab00'
                 },
                 orange: {
                     50: '#fff3e0',
@@ -178,7 +180,7 @@ module.exports = {
                     'accent-100': '#ffd180',
                     'accent-200': '#ffab40',
                     'accent-400': '#ff9100',
-                    'accent-700': '#ff6d00',
+                    'accent-700': '#ff6d00'
                 },
                 'deep-orange': {
                     50: '#fbe9e7',
@@ -194,7 +196,7 @@ module.exports = {
                     'accent-100': '#ff9e80',
                     'accent-200': '#ff6e40',
                     'accent-400': '#ff3d00',
-                    'accent-700': '#dd2c00',
+                    'accent-700': '#dd2c00'
                 },
                 brown: {
                     50: '#efebe9',
@@ -206,18 +208,18 @@ module.exports = {
                     600: '#6d4c41',
                     700: '#5d4037',
                     800: '#4e342e',
-                    900: '#3e2723',
-                },
-            },
+                    900: '#3e2723'
+                }
+            }
 
-        },
+        }
     },
 
     variants: {
         extend: {
-            opacity: ['disabled'],
-        },
+            opacity: ['disabled']
+        }
     },
 
-    plugins: [require('@tailwindcss/forms')],
+    plugins: [require('@tailwindcss/forms')]
 };

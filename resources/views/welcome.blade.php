@@ -34,8 +34,9 @@
                     </div>
                 </div>
                 <div x-data="{ modalExpanded: false }">
-                    <div class="fa np nj nw" data-aos="fade-up" data-aos-delay="200"><img class="i_"
-                            src="/open-pro/images/hero-image-01.jpg" width="1024" height="504" alt="Hero">
+                    <div class="fa np nj nw" data-aos="fade-up" data-aos-delay="200">
+                        <img class="i_"
+                            src="https://res.cloudinary.com/dj6bwuwu6/image/upload/v1622453463/fursee/marvin-meyer-SYTO3xs06fU-unsplash.jpg" width="1024" height="504" alt="Hero">
                         <a class="fu lx" @click.prevent="modalExpanded = true" href="#0" aria-controls="modal">
                             <svg class="ca rm xl xf wt h_ pt hz" viewbox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
                                 <defs>

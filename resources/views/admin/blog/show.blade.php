@@ -34,7 +34,7 @@
             <div class="nk-block-head-content">
                 <h5 class="nk-block-title fw-normal font-circular-regular">Blog post {{ $blog->id }}</h5>
                 <div class="nk-block-des">
-{{--                    <p class="lead">We love to share ideas! Visit our blog if you're looking for great articles or inspiration to get you going.</p>--}}
+                    {{--<p class="lead">We love to share ideas! Visit our blog if you're looking for great articles or inspiration to get you going.</p>--}}
                 </div>
             </div>
         </div><!-- .nk-block-head -->
