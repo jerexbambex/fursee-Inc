@@ -38,26 +38,49 @@
                         <h2 class="h2 sm">Our passionate team</h2>
                         <p class="rz lu">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consequat.</p>
                     </div> --}}
-                    <div class="flex flex-wrap pf pc bh py pg" data-aos-id-team="">
-                        @foreach($teams as $team)
-                            {{-- <div class="ds vq _r u_ dn de" data-aos="fade-up" data-aos-delay="{{ 100 * $team->id }}" data-aos-anchor="[data-aos-id-team]">
-                                <div class="np ng nw">
-                                    <img class="nr sm" src="{{ $team->userAvatar() }}" width="120" height="120" alt="Team member 02">
-                                    <h4 class="rz ro si">{{ $team->fullName() }}</h4>
-                                    <div class="la si">{{ $team->role }}</div>
-                                    <a class="text-purple-600 nc wb h_ pt hz" href="#0">@ {{ $team->handle }}</a>
-                                </div>
-                            </div> --}}
-                            <div class="w-full px-3 mb-6 md:w-1/2 lg:w-1/3" data-aos="fade-up" data-aos-delay="{{ 100 * $team->id }}" data-aos-anchor="[data-aos-id-team]">
-                                <div class="py-24 text-center bg-white rounded shadow dark:bg-gray-800 hover:shadow-xl">
-                                    <img class="object-cover mx-auto mb-8 rounded-full w-36 h-36" src="{{ $team->userAvatar() }}" alt="">
-                                    <p class="mb-2 text-2xl font-normal text-blue-gray-800 dark:text-gray-300">{{ $team->fullName() }}</p>
-                                    <p class="text-gray-500 dark:text-gray-400">{{ $team->role }}</p>
-                                    <p class="text-gray-500 dark:text-gray-400">@ {{ $team->handle }}</p>
+                    @if ($latestPost === null )
+                        <section class="fa">
+                            <div class="oq i_ uj dt">
+                                <div class="fe aw vx vw">
+                                    <div class="o_ i_ lt">
+                                        <div class="fa nd ng sw" data-aos="fade-up"><img class="nr" src="/open-pro/images/empty.png" width="196"
+                                                height="396" alt="404"> <svg class="cf rg fj text-purple-600 fu fl fc bw" width="84"
+                                                height="80" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M80 45.876l-3.434-2.142c-.313-.196-.636-.374-.95-.566l.09-.385c-.217.02-.433.034-.649.053a113.732 113.732 0 00-29.876-12.614l26.527-11.208 7.776-3.285-8.445-.716a283.299 283.299 0 00-56.645.881c-9.887 1.17-14.58 3.26-14.388 4.343.202 1.165 5.204 1.342 14.918.216a295.374 295.374 0 0146.206-1.615l-22.516 9.815-6.55 2.855 7.001 1.372c10.347 2.03 20.402 5.58 29.777 10.452a380.058 380.058 0 01-38.52.822l-5.717-.169 4.521 3.469c5.697 4.371 11.358 8.727 16.633 13.466 4.051 3.638 7.87 7.52 11.232 11.74a100.788 100.788 0 00-21.646-4.049c-2.938-.211-4.42.091-4.428.405-.01.339 1.433.688 4.317.94a98.562 98.562 0 0123.591 5.116c.36.492.722.984 1.069 1.487l.673-.864c.181.066.364.126.545.194l.653.246-.388-.584c-.107-.16-.221-.315-.329-.475l.68-.871c-.556-.198-1.116-.378-1.674-.566-3.728-5.23-8.137-9.96-12.834-14.337-4.72-4.4-9.732-8.465-14.761-12.482 13.89.587 27.83.417 41.73-.533.203.12.411.23.613.35l.094-.396c.366-.025.733-.045 1.1-.072L80 45.876z"
+                                                    fill="#5D5DFF" fill-rule="evenodd"></path>
+                                            </svg></div>
+                                        <h1 class="h1 sm" data-aos="fade-up" data-aos-delay="200">Uh oh. The Admin is uploading contents.
+                                        </h1>
+                                        <p class="rq lu" data-aos="fade-up" data-aos-delay="400">This will be available shortly. <br>
+                                            Head to our <a
+                                                class="text-purple-600 wb h_ pt hz" href="/">homepage</a></p>
+                                    </div>
                                 </div>
                             </div>
-                        @endforeach
-                    </div>
+                        </section>
+                    @else
+                        <div class="flex flex-wrap pf pc bh py pg" data-aos-id-team="">
+                            @foreach($teams as $team)
+                                {{-- <div class="ds vq _r u_ dn de" data-aos="fade-up" data-aos-delay="{{ 100 * $team->id }}" data-aos-anchor="[data-aos-id-team]">
+                                    <div class="np ng nw">
+                                        <img class="nr sm" src="{{ $team->userAvatar() }}" width="120" height="120" alt="Team member 02">
+                                        <h4 class="rz ro si">{{ $team->fullName() }}</h4>
+                                        <div class="la si">{{ $team->role }}</div>
+                                        <a class="text-purple-600 nc wb h_ pt hz" href="#0">@ {{ $team->handle }}</a>
+                                    </div>
+                                </div> --}}
+                                <div class="w-full px-3 mb-6 md:w-1/2 lg:w-1/3" data-aos="fade-up" data-aos-delay="{{ 100 * $team->id }}" data-aos-anchor="[data-aos-id-team]">
+                                    <div class="py-24 text-center bg-white rounded shadow dark:bg-gray-800 hover:shadow-xl">
+                                        <img class="object-cover mx-auto mb-8 rounded-full w-36 h-36" src="{{ $team->userAvatar() }}" alt="">
+                                        <p class="mb-2 text-2xl font-normal text-blue-gray-800 dark:text-gray-300">{{ $team->fullName() }}</p>
+                                        <p class="text-gray-500 dark:text-gray-400">{{ $team->role }}</p>
+                                        <p class="text-gray-500 dark:text-gray-400">@ {{ $team->handle }}</p>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                    @endif
                 </div>
             </div>
         </section>
