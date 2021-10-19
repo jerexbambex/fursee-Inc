@@ -1,7 +1,7 @@
 @extends('layouts.admintemplate')
 
 @section('content')
-    @if(!$teams->count())
+    @if(!$teams)
         <div class="mx-auto nk-block-head nk-block-head-lg wide-xs">
             <div class="text-center nk-block-head-content">
                 <p>
@@ -318,8 +318,8 @@
                             <ul class="flex-wrap align-center g-3">
                                 <li>
                                     <button class="btn btn-danger" id="submitButton{{ $team->id }}" type="submit"
-                                        onclick="event.preventDefault(); 
-                                        document.getElementById('subscription-cancel-confirmed{{ $team->id }}').submit(); 
+                                        onclick="event.preventDefault();
+                                        document.getElementById('subscription-cancel-confirmed{{ $team->id }}').submit();
                                         return DisplayProgressMessage(this, 'Removing...');">Continue and Remove</button>
                                 </li>
                                 <li>
@@ -334,7 +334,7 @@
                     </div>
                 </div><!-- .modal-content -->
             </div><!-- .modla-dialog -->
-        </div>        
+        </div>
     @endforeach
 
 

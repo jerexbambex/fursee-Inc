@@ -14,7 +14,8 @@ class AdminTeamController extends Controller
 
     public function index()
     {
-        $teams = Team::all();
+        // $teams = Team::all();
+        $teams = [];
         return view('admin.teams.index', compact('teams'));
     }
 
