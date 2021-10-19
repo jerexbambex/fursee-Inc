@@ -12,117 +12,140 @@
         </svg>
     </div>
     <section class="fa">
-        <div class="oq i_ uj dt">
-            <div class="fe aw vx vw">
-                <div class="o_ aw vw lt vk">
-                    <h1 class="h1 text-blue-gray-800 dark:text-gray-200" data-aos="fade-up">Refreshing news for developers and designers</h1>
-                </div>
-                <div class="aw vw">
-                    <article class="ox i_ vu nv mi cw ka _s _h nw">
-                        <a class="fa nc lx" href="{{ route('blog.show', $latestPost->path()) }}" data-aos="fade-right" data-aos-delay="200">
-                            <div class="hidden fu ff _ dh he kp kh _v _d xi xo h_ pi hq fs" aria-hidden="true"></div>
-                            <figure class="fa rf fn kr _e uu he kd _m xi xo h_ pi hq"><img class="fu ff cv rw un he xt h_ pi hq" src="{{ $latestPost->avatar() }}" width="540" height="303" alt="Blog post 01"></figure>
-                        </a>
-                        <div data-aos="fade-left" data-aos-delay="200">
-                            <header>
-                                <div class="sh">
-                                    <ul class="np ny rk ro ic">
-                                        @foreach($latestPost->category as $category)
-                                            <li class="ia">
-                                                <a class="nd lt li uy uk nr yl h_ pt bg-blue-gray-400 hover:bg-blue-gray-700" href="#0">{{$category->name}}</a>
-                                            </li>
-                                        @endforeach
-                                    </ul>
-                                </div>
-                                <h3 class="h3 bf kw sa">
-                                    <a class="wy h_ pt hz text-blue-gray-700 hover:text-blue-gray-900 dark:text-gray-200 dark:hover:text-gray-400" href="{{ route('blog.show', $latestPost->path()) }}">{{ $latestPost->title }}.</a>
-                                </h3>
-                            </header>
-                            <div class="font-light leading-relaxed text-gray-600 rq rt dark:text-gray-300">
-                                {!! nl2br(Str::limit($latestPost->body, 150)) !!}
-                            </div>
-                            <footer class="np nw sd">
-                                <a href="#0"><img class="nr rn sv" src="/open-pro/images/news-author-04.jpg" width="40" height="40" alt="Author 04"></a>
-                                <div>
-                                    <a class="ro ls wy h_ pt hz" href="#0">Chris Solerieu</a>
-                                    <span class="ll">-
-                                    </span>
-                                    <span class="la">{{ $latestPost->created_at->diffForHumans() }}</span>
-                                </div>
-                            </footer>
+        @if ($latestPost === null )
+            <section class="fa">
+                <div class="oq i_ uj dt">
+                    <div class="fe aw vx vw">
+                        <div class="o_ i_ lt">
+                            <div class="fa nd ng sw" data-aos="fade-up"><img class="nr" src="/open-pro/images/empty.png" width="196"
+                                    height="396" alt="404"> <svg class="cf rg fj text-purple-600 fu fl fc bw" width="84"
+                                    height="80" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M80 45.876l-3.434-2.142c-.313-.196-.636-.374-.95-.566l.09-.385c-.217.02-.433.034-.649.053a113.732 113.732 0 00-29.876-12.614l26.527-11.208 7.776-3.285-8.445-.716a283.299 283.299 0 00-56.645.881c-9.887 1.17-14.58 3.26-14.388 4.343.202 1.165 5.204 1.342 14.918.216a295.374 295.374 0 0146.206-1.615l-22.516 9.815-6.55 2.855 7.001 1.372c10.347 2.03 20.402 5.58 29.777 10.452a380.058 380.058 0 01-38.52.822l-5.717-.169 4.521 3.469c5.697 4.371 11.358 8.727 16.633 13.466 4.051 3.638 7.87 7.52 11.232 11.74a100.788 100.788 0 00-21.646-4.049c-2.938-.211-4.42.091-4.428.405-.01.339 1.433.688 4.317.94a98.562 98.562 0 0123.591 5.116c.36.492.722.984 1.069 1.487l.673-.864c.181.066.364.126.545.194l.653.246-.388-.584c-.107-.16-.221-.315-.329-.475l.68-.871c-.556-.198-1.116-.378-1.674-.566-3.728-5.23-8.137-9.96-12.834-14.337-4.72-4.4-9.732-8.465-14.761-12.482 13.89.587 27.83.417 41.73-.533.203.12.411.23.613.35l.094-.396c.366-.025.733-.045 1.1-.072L80 45.876z"
+                                        fill="#5D5DFF" fill-rule="evenodd"></path>
+                                </svg></div>
+                            <h1 class="h1 sm" data-aos="fade-up" data-aos-delay="200">Uh oh. The Admin is uploading contents.
+                            </h1>
+                            <p class="rq lu" data-aos="fade-up" data-aos-delay="400">This will be available shortly. <br>
+                                Head to our <a
+                                    class="text-purple-600 wb h_ pt hz" href="/">homepage</a></p>
                         </div>
-                    </article>
+                    </div>
                 </div>
-                <div class="ox i_ vu">
-                    <h4 class="h4 ws bd na tj text-blue-gray-700 dark:text-gray-200" data-aos="fade-up">Latest articles</h4>
-                    <div class="nv ck ms mn mr nb">
-                        @foreach($blogs as $blog)
-                            <article class="np ng rw" data-aos="fade-up">
+            </section>
+        @else
+            <div class="oq i_ uj dt">
+                <div class="fe aw vx vw">
+                    <div class="o_ aw vw lt vk">
+                        <h1 class="h1 text-blue-gray-800 dark:text-gray-200" data-aos="fade-up">Refreshing news for developers and designers</h1>
+                    </div>
+                    <div class="aw vw">
+                        <article class="ox i_ vu nv mi cw ka _s _h nw">
+                            <a class="fa nc lx" href="{{ route('blog.show', $latestPost->path()) }}" data-aos="fade-right" data-aos-delay="200">
+                                <div class="hidden fu ff _ dh he kp kh _v _d xi xo h_ pi hq fs" aria-hidden="true"></div>
+                                <figure class="fa rf fn kr _e uu he kd _m xi xo h_ pi hq"><img class="fu ff cv rw un he xt h_ pi hq" src="{{ $latestPost->avatar() }}" width="540" height="303" alt="Blog post 01"></figure>
+                            </a>
+                            <div data-aos="fade-left" data-aos-delay="200">
                                 <header>
-                                    <a class="nc sw" href="{{ route('blog.show', $blog->path()) }}">
-                                        <figure class="fa rf fn uu nt">
-                                            <img class="fu ff cv rw un he xt h_ pi hq" src="{{ $blog->avatar() }}" width="352" height="198" alt="News 01">
-                                        </figure>
-                                    </a>
                                     <div class="sh">
                                         <ul class="np ny rk ro ic">
-                                            @foreach($blog->category as $category)
+                                            @foreach($latestPost->category as $category)
                                                 <li class="ia">
-                                                    <a class="nd lt li uy uk nr yl h_ pt bg-blue-gray-400 hover:bg-blue-gray-700" href="#0">{{ $category->name }}</a>
+                                                    <a class="nd lt li uy uk nr yl h_ pt bg-blue-gray-400 hover:bg-blue-gray-700" href="#0">{{$category->name}}</a>
                                                 </li>
                                             @endforeach
                                         </ul>
                                     </div>
-                                    <h3 class="font-light h4 sa">
-                                        <a class="wy h_ pt hz text-blue-gray-700 dark:text-gray-200 hover:text-blue-gray-900 dark:hover:text-gray-400" href="{{ route('blog.show', $blog->path()) }}">{{ $blog->title }}.</a>
+                                    <h3 class="h3 bf kw sa">
+                                        <a class="wy h_ pt hz text-blue-gray-700 hover:text-blue-gray-900 dark:text-gray-200 dark:hover:text-gray-400" href="{{ route('blog.show', $latestPost->path()) }}">{{ $latestPost->title }}.</a>
                                     </h3>
                                 </header>
-                                <p class="text-gray-600 rq rt dark:text-gray-500">
-                                    {!! nl2br(Str::limit($blog->body, 150)) !!}
-                                </p>
+                                <div class="font-light leading-relaxed text-gray-600 rq rt dark:text-gray-300">
+                                    {!! nl2br(Str::limit($latestPost->body, 150)) !!}
+                                </div>
                                 <footer class="np nw sd">
-                                    <a href="#0"><img class="nr rn sv" src="/open-pro/images/news-author-01.jpg" width="40" height="40" alt="Author 01"></a>
-                                    <div class="ro">
-                                        <a class="ls wy h_ pt hz" href="#0">Anastasia Dan</a>
+                                    <a href="#0"><img class="nr rn sv" src="/open-pro/images/news-author-04.jpg" width="40" height="40" alt="Author 04"></a>
+                                    <div>
+                                        <a class="ro ls wy h_ pt hz" href="#0">Chris Solerieu</a>
                                         <span class="ll">-
                                         </span>
-                                        <span class="la">{{ $blog->created_at->diffForHumans() }}</span>
+                                        <span class="la">{{ $latestPost->created_at->diffForHumans() }}</span>
                                     </div>
                                 </footer>
-                            </article>
-                        @endforeach
+                            </div>
+                        </article>
                     </div>
-                </div>
+                    <div class="ox i_ vu">
+                        <h4 class="h4 ws bd na tj text-blue-gray-700 dark:text-gray-200" data-aos="fade-up">Latest articles</h4>
+                        <div class="nv ck ms mn mr nb">
+                            @foreach($blogs as $blog)
+                                <article class="np ng rw" data-aos="fade-up">
+                                    <header>
+                                        <a class="nc sw" href="{{ route('blog.show', $blog->path()) }}">
+                                            <figure class="fa rf fn uu nt">
+                                                <img class="fu ff cv rw un he xt h_ pi hq" src="{{ $blog->avatar() }}" width="352" height="198" alt="News 01">
+                                            </figure>
+                                        </a>
+                                        <div class="sh">
+                                            <ul class="np ny rk ro ic">
+                                                @foreach($blog->category as $category)
+                                                    <li class="ia">
+                                                        <a class="nd lt li uy uk nr yl h_ pt bg-blue-gray-400 hover:bg-blue-gray-700" href="#0">{{ $category->name }}</a>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                        <h3 class="font-light h4 sa">
+                                            <a class="wy h_ pt hz text-blue-gray-700 dark:text-gray-200 hover:text-blue-gray-900 dark:hover:text-gray-400" href="{{ route('blog.show', $blog->path()) }}">{{ $blog->title }}.</a>
+                                        </h3>
+                                    </header>
+                                    <p class="text-gray-600 rq rt dark:text-gray-500">
+                                        {!! nl2br(Str::limit($blog->body, 150)) !!}
+                                    </p>
+                                    <footer class="np nw sd">
+                                        <a href="#0"><img class="nr rn sv" src="/open-pro/images/news-author-01.jpg" width="40" height="40" alt="Author 01"></a>
+                                        <div class="ro">
+                                            <a class="ls wy h_ pt hz" href="#0">Anastasia Dan</a>
+                                            <span class="ll">-
+                                            </span>
+                                            <span class="la">{{ $blog->created_at->diffForHumans() }}</span>
+                                        </div>
+                                    </footer>
+                                </article>
+                            @endforeach
+                        </div>
+                    </div>
 
-                <nav class="np nj ak" role="navigation" aria-label="Pagination Navigation">
-                    <ul class="nd ny ro r_ ic">
-                        {{ $blogs->links() }}
-                    </ul>
-                    {{-- <ul class="nd ny ro r_ ic">
-                        <li class="ia">
-                            <span class="nd bu we nj nw _ uj nr la">Prev</span>
-                        </li>
-                        <li class="ia">
-                            <a href="#0" class="nd bu we nj nw _ uw nr lo yf xu pt hz">1</a>
-                        </li>
-                        <li class="ia">
-                            <a href="#0" class="nd bu we nj nw _ uw nr lo yf xu pt hz">2</a>
-                        </li>
-                        <li class="ia">
-                            <a href="#0" class="nd bu we nj nw _ uw nr lo yf xu pt hz">3</a>
-                        </li>
-                        <li class="ia">
-                            <span class="nd bu we nj nw _ uw nr la">...</span>
-                        </li>
-                        <li class="ia">
-                            <a href="#0" class="nd bu we nj nw _ uw nr lo yf xu pt hz">12</a>
-                        </li>
-                        <li class="ia">
-                            <a href="#0" class="nd bu we nj nw _ uj nr lo yf xu pt hz">Next</a>
-                        </li>
-                    </ul> --}}
-                </nav>
+                    <nav class="np nj ak" role="navigation" aria-label="Pagination Navigation">
+                        <ul class="nd ny ro r_ ic">
+                            {{-- {{ $blogs->links('vendor.pagination.custom-front') }} --}}
+                        </ul>
+                        {{-- <ul class="nd ny ro r_ ic">
+                            <li class="ia">
+                                <span class="nd bu we nj nw _ uj nr la">Prev</span>
+                            </li>
+                            <li class="ia">
+                                <a href="#0" class="nd bu we nj nw _ uw nr lo yf xu pt hz">1</a>
+                            </li>
+                            <li class="ia">
+                                <a href="#0" class="nd bu we nj nw _ uw nr lo yf xu pt hz">2</a>
+                            </li>
+                            <li class="ia">
+                                <a href="#0" class="nd bu we nj nw _ uw nr lo yf xu pt hz">3</a>
+                            </li>
+                            <li class="ia">
+                                <span class="nd bu we nj nw _ uw nr la">...</span>
+                            </li>
+                            <li class="ia">
+                                <a href="#0" class="nd bu we nj nw _ uw nr lo yf xu pt hz">12</a>
+                            </li>
+                            <li class="ia">
+                                <a href="#0" class="nd bu we nj nw _ uj nr lo yf xu pt hz">Next</a>
+                            </li>
+                        </ul> --}}
+                    </nav>
+                </div>
             </div>
-        </div>
+        @endif
     </section>
 </x-guest-layout>

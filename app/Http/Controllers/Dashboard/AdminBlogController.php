@@ -91,6 +91,7 @@ class AdminBlogController extends Controller
             $publicId = json_decode($blog->avatar)->public_id;
             Cloudinary::destroy($publicId, $options = []);
         }
+        
         $blog->delete();
 
         session()->flash('success', 'The post was successfully deleted');
