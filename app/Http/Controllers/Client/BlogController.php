@@ -12,7 +12,8 @@ class BlogController extends Controller
     public function index()
     {
         $blogs = Blog::latest()->with('category')->paginate(9);
-        $latestPost = Blog::with('category')->latest()->first();
+        // $latestPost = Blog::with('category')->latest()->first();
+        $latestPost = [];
 
         return view('client.pages.blog.index', compact('blogs', 'latestPost'));
     }

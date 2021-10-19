@@ -38,7 +38,7 @@
                         <h2 class="h2 sm">Our passionate team</h2>
                         <p class="rz lu">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consequat.</p>
                     </div> --}}
-                    @if ($latestPost === null )
+                    @if (!$teams)
                         <section class="fa">
                             <div class="oq i_ uj dt">
                                 <div class="fe aw vx vw">
@@ -85,7 +85,7 @@
             </div>
         </section>
 
-        <section class="fa">
+        {{-- <section class="fa">
             <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
                 <div class="grid gap-10 lg:grid-cols-2">
                     <div class="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
@@ -131,6 +131,6 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
     </main>
 </x-guest-layout>

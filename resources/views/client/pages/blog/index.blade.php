@@ -12,7 +12,7 @@
         </svg>
     </div>
     <section class="fa">
-        @if ($latestPost === null )
+        @if (!$latestPost )
             <section class="fa">
                 <div class="oq i_ uj dt">
                     <div class="fe aw vx vw">
